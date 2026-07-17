@@ -18,6 +18,9 @@ export function ItineraryView({ itinerary }: Props) {
       {itinerary.days.map((day) => (
         <div key={day.day_index} className="day-block">
           <h3>Day {day.day_index}｜{day.date}</h3>
+          {day.stops.length === 0 && (
+            <p className="day-empty">這天刻意留白，沒有硬湊行程——原因見上方提醒。</p>
+          )}
           <div className="stop-list">
             {day.stops.map((stop) => (
               <div key={stop.id} className="stop-card">
