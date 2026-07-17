@@ -8,7 +8,8 @@
   "name": "string，中文名稱",
   "name_local": "string，日文原名",
   "category": "attraction | hotel | restaurant",
-  "region_group": "string，地理分群，例：那霸市區 / 中部 / 北部（供地理動線分群用）",
+  "region_group": "北部 | 中部 | 南部（沖繩本島標準三分法，供地理動線分群/篩選用，見下方緯度分界）",
+  "sub_area": "string | null，更細的地標區域，例：美國村 / 瀨長島 / 國際通周邊，不影響篩選，只是額外描述",
 
   // A. 基本資訊
   "address": "string | null",
@@ -52,9 +53,23 @@
 }
 ```
 
+## region_group 分界（緯度，沖繩本島）
+
+三分法邊界跟 `scraper/merge_osm.py`／`scraper/ingest_osm.py` 用的是同一組，改一邊要記得改另一邊：
+
+| region_group | 緯度範圍 | 大致對應 |
+|---|---|---|
+| 北部 | lat ≥ 26.45 | 名護、本部、國頭、古宇利島 |
+| 中部 | 26.25 ≤ lat < 26.45 | 沖繩市、北谷（美國村）、讀谷、嘉手納 |
+| 南部 | lat < 26.25 | 那霸、瀨長島、系滿、南城 |
+
+只檢查緯度（南北軸），沖繩本島狹長，緯度已足夠區分；資料沒有 lat 時無法自動分類，需人工標註。
+
 ## 資料現況
 
-- `attractions.json` / `hotels.json` / `restaurants.json` 目前只有從使用者 2024/1/7–1/11 沖繩行程 Excel 轉錄的種子資料（`source: "excel_seed"`）
-- `lat`/`lng`/`rating` 等欄位 Excel 沒有提供，先標 `null`，待後續跑 geocoding 或官網查證再補，**不可用猜測值填入**
+- `attractions.json` / `hotels.json` / `restaurants.json` 有兩種來源：
+  - `source: "excel_seed"`：使用者 2024/1/7–1/11 沖繩行程 Excel 轉錄的種子資料，核心欄位（MapCode/停車/備案）最完整，但只有 15 筆
+  - `source: "osm"`：`scraper/ingest_osm.py` 從 OpenStreetMap 開放資料匯入，補廣度，但只有基本欄位（名稱/座標/分類/部分營業時間），MapCode/停車/親子適合度等核心決策欄位是 `null`，需要之後人工或 LLM 補標註
+- `lat`/`lng`/`rating` 等欄位沒有來源就標 `null`，待後續跑 geocoding 或官網查證再補，**不可用猜測值填入**
 - 原始 Excel 檔案是個人行程資料，**刻意不進版控**（見 `.gitignore` 的 `*.xlsx`），只有轉錄、去識別化後的 JSON 才進 repo
-- 下一步：`scraper/sources/osm_overpass.py` 補齊經緯度與更多景點廣度
+- 下一步：針對 `source: "osm"` 的資料，優先幫熱門項目補 MapCode 與親子/預算標籤（`scraper/enrich_llm.py`）
