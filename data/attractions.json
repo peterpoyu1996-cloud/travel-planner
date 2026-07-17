@@ -239,7 +239,7 @@
   },
   {
     "id": "osm-attr-1068015481",
-    "name": "宜野湾市立博物館",
+    "name": "宜野灣市立博物館",
     "name_local": "宜野湾市立博物館",
     "category": "attraction",
     "region_group": "中部",
@@ -269,11 +269,11 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068015481），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1068015481），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-attr-5076211521",
-    "name": "国際海洋情報センター",
+    "name": "國際海洋資訊中心",
     "name_local": "国際海洋情報センター",
     "category": "attraction",
     "region_group": "北部",
@@ -303,7 +303,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5076211521），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 5076211521），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-attr-11936491418",
@@ -375,7 +375,7 @@
   },
   {
     "id": "osm-attr-1068041707",
-    "name": "諸見民芸館",
+    "name": "諸見民藝館",
     "name_local": "諸見民芸館",
     "category": "attraction",
     "region_group": "中部",
@@ -405,7 +405,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068041707），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1068041707），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-attr-5242685323",
@@ -443,7 +443,7 @@
   },
   {
     "id": "osm-attr-5885029905",
-    "name": "沖縄工芸村",
+    "name": "沖繩工藝村",
     "name_local": "沖縄工芸村",
     "category": "attraction",
     "region_group": "北部",
@@ -473,7 +473,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5885029905），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 5885029905），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-attr-7914430529",
@@ -613,7 +613,7 @@
   },
   {
     "id": "osm-attr-2771807107",
-    "name": "沖縄市立郷土博物館",
+    "name": "沖繩市立鄉土博物館",
     "name_local": "沖縄市立郷土博物館",
     "category": "attraction",
     "region_group": "中部",
@@ -643,7 +643,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 2771807107），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 2771807107），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-attr-4374980875",
@@ -681,7 +681,7 @@
   },
   {
     "id": "osm-attr-5310917321",
-    "name": "展示広場",
+    "name": "展示廣場",
     "name_local": "展示広場",
     "category": "attraction",
     "region_group": "南部",
@@ -711,7 +711,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5310917321），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 5310917321），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-attr-5325219237",
@@ -749,7 +749,7 @@
   },
   {
     "id": "osm-attr-5885009907",
-    "name": "伊江ビーチ",
+    "name": "伊江海灘",
     "name_local": "伊江ビーチ",
     "category": "attraction",
     "region_group": "北部",
@@ -779,7 +779,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5885009907），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 5885009907），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-attr-8226624094",
@@ -817,7 +817,7 @@
   },
   {
     "id": "osm-attr-602900690",
-    "name": "沖縄県平和祈念資料館",
+    "name": "沖繩縣平和祈念資料館",
     "name_local": "沖縄県平和祈念資料館",
     "category": "attraction",
     "region_group": "南部",
@@ -847,11 +847,11 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 602900690），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 602900690），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-attr-1068010664",
-    "name": "東南植物楽園＆おきなわスロー風楽風遊の森",
+    "name": "東南植物樂園",
     "name_local": "東南植物楽園＆おきなわスロー風楽風遊の森",
     "category": "attraction",
     "region_group": "中部",
@@ -881,11 +881,11 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068010664），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1068010664），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-attr-1068014185",
-    "name": "おきなわワールド玉泉洞",
+    "name": "沖繩世界 玉泉洞",
     "name_local": "おきなわワールド玉泉洞",
     "category": "attraction",
     "region_group": "南部",
@@ -915,11 +915,11 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068014185），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1068014185），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-attr-1068016179",
-    "name": "埋蔵文化財センター",
+    "name": "埋藏文化財中心",
     "name_local": "埋蔵文化財センター",
     "category": "attraction",
     "region_group": "南部",
@@ -949,7 +949,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068016179），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1068016179），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-attr-1068017752",
@@ -987,7 +987,7 @@
   },
   {
     "id": "osm-attr-1068022281",
-    "name": "歴史民俗資料展示室",
+    "name": "歷史民俗資料展示室",
     "name_local": "歴史民俗資料展示室",
     "category": "attraction",
     "region_group": "南部",
@@ -1017,11 +1017,11 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068022281），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1068022281），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-attr-1068027240",
-    "name": "具志頭歴史民俗資料館",
+    "name": "具志頭歷史民俗資料館",
     "name_local": "具志頭歴史民俗資料館",
     "category": "attraction",
     "region_group": "南部",
@@ -1051,11 +1051,11 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068027240），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1068027240），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-attr-1068028521",
-    "name": "国営沖縄記念公園熱帯・亜熱帯都市緑化植物園",
+    "name": "國營沖繩紀念公園熱帶亞熱帶都市綠化植物園",
     "name_local": "国営沖縄記念公園熱帯・亜熱帯都市緑化植物園",
     "category": "attraction",
     "region_group": "北部",
@@ -1085,11 +1085,11 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068028521），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1068028521），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-attr-1068028895",
-    "name": "国営沖縄記念公園海洋文化館",
+    "name": "國營沖繩記念公園海洋文化館",
     "name_local": "国営沖縄記念公園海洋文化館",
     "category": "attraction",
     "region_group": "北部",
@@ -1119,7 +1119,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068028895），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1068028895），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-attr-1068032145",
@@ -1191,7 +1191,7 @@
   },
   {
     "id": "osm-attr-1068042376",
-    "name": "東風平歴史民俗資料館",
+    "name": "東風平歷史民俗資料館",
     "name_local": "東風平歴史民俗資料館",
     "category": "attraction",
     "region_group": "南部",
@@ -1221,7 +1221,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068042376），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1068042376），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-attr-1068043305",
@@ -1463,7 +1463,7 @@
   },
   {
     "id": "osm-attr-5340095140",
-    "name": "金城町石畳道",
+    "name": "金城町石疊道",
     "name_local": "金城町石畳道",
     "category": "attraction",
     "region_group": "南部",
@@ -1493,7 +1493,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5340095140），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 5340095140），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-attr-5606759626",
@@ -1599,7 +1599,7 @@
   },
   {
     "id": "osm-attr-10294865017",
-    "name": "沖縄歴史民俗資料館",
+    "name": "沖繩歷史民俗資料館",
     "name_local": "沖縄歴史民俗資料館",
     "category": "attraction",
     "region_group": "北部",
@@ -1629,7 +1629,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 10294865017），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 10294865017），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-attr-11215905557",
@@ -1769,7 +1769,7 @@
   },
   {
     "id": "osm-attr-13340657801",
-    "name": "うんこミュージアムOKINAWA",
+    "name": "沖繩便便博物館",
     "name_local": "うんこミュージアムOKINAWA",
     "category": "attraction",
     "region_group": "中部",
@@ -1799,11 +1799,11 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13340657801），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 13340657801），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-attr-13615396316",
-    "name": "沖縄地区税関広報展示室",
+    "name": "沖繩地區稅關廣報展示室",
     "name_local": "沖縄地区税関広報展示室",
     "category": "attraction",
     "region_group": "南部",
@@ -1833,11 +1833,11 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13615396316），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 13615396316），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-attr-13740236877",
-    "name": "バーチャルミュージアム",
+    "name": "虛擬博物館",
     "name_local": "バーチャルミュージアム",
     "category": "attraction",
     "region_group": "北部",
@@ -1867,11 +1867,11 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13740236877），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 13740236877），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-attr-602895164",
-    "name": "ひめゆり平和祈念資料館",
+    "name": "姬百合和平祈念資料館",
     "name_local": "ひめゆり平和祈念資料館",
     "category": "attraction",
     "region_group": "南部",
@@ -1901,11 +1901,11 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 602895164），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 602895164），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-attr-602936534",
-    "name": "残波岬",
+    "name": "殘波岬",
     "name_local": "残波岬",
     "category": "attraction",
     "region_group": "中部",
@@ -1935,11 +1935,11 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 602936534），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 602936534），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-attr-1079092630",
-    "name": "旧海軍司令部壕",
+    "name": "舊海軍司令部壕",
     "name_local": "旧海軍司令部壕",
     "category": "attraction",
     "region_group": "南部",
@@ -1969,7 +1969,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1079092630），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1079092630），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-attr-1094909470",
@@ -2245,7 +2245,7 @@
   },
   {
     "id": "osm-attr-1993614070",
-    "name": "真栄田岬",
+    "name": "真榮田岬",
     "name_local": "真栄田岬",
     "category": "attraction",
     "region_group": "中部",
@@ -2275,6 +2275,6 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1993614070），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1993614070），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   }
 ]

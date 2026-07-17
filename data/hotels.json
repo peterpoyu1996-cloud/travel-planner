@@ -103,7 +103,7 @@
   },
   {
     "id": "osm-hotel-1583677053",
-    "name": "東横INN那覇新都心おもろまち",
+    "name": "東橫INN那霸新都心Omoromachi",
     "name_local": "東横INN那覇新都心おもろまち",
     "category": "hotel",
     "region_group": "南部",
@@ -133,7 +133,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1583677053），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1583677053），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-hotel-1583677055",
@@ -171,7 +171,7 @@
   },
   {
     "id": "osm-hotel-2676267351",
-    "name": "ホテルモントレ沖縄 スパリゾート",
+    "name": "蒙特雷飯店沖繩 溫泉度假村",
     "name_local": "ホテルモントレ沖縄 スパリゾート",
     "category": "hotel",
     "region_group": "北部",
@@ -201,7 +201,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 2676267351），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 2676267351），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-hotel-4673553180",
@@ -273,7 +273,7 @@
   },
   {
     "id": "osm-hotel-5010880558",
-    "name": "スマイルホテル那覇シティリゾート",
+    "name": "Smile飯店那霸城市度假村",
     "name_local": "スマイルホテル那覇シティリゾート",
     "category": "hotel",
     "region_group": "南部",
@@ -303,7 +303,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5010880558），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 5010880558），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-hotel-5885046890",

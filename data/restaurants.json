@@ -171,7 +171,7 @@
   },
   {
     "id": "osm-rest-1558481078",
-    "name": "CoCo壱番屋",
+    "name": "CoCo壹番屋",
     "name_local": "CoCo壱番屋",
     "category": "restaurant",
     "region_group": "南部",
@@ -201,7 +201,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1558481078），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1558481078），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-rest-1995215709",
@@ -307,7 +307,7 @@
   },
   {
     "id": "osm-rest-4489395093",
-    "name": "焼肉本舗 島牛",
+    "name": "燒肉本舗 島牛",
     "name_local": "焼肉本舗 島牛",
     "category": "restaurant",
     "region_group": "南部",
@@ -337,7 +337,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4489395093），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 4489395093），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-rest-5413612723",
@@ -545,7 +545,7 @@
   },
   {
     "id": "osm-rest-11214895437",
-    "name": "串カツ田中",
+    "name": "串炸田中",
     "name_local": "串カツ田中",
     "category": "restaurant",
     "region_group": "中部",
@@ -575,7 +575,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11214895437），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11214895437），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-rest-11390871235",
@@ -953,7 +953,7 @@
   },
   {
     "id": "osm-rest-12876542801",
-    "name": "ジョリーパスタ 名護店",
+    "name": "Jolly Pasta 名護店",
     "name_local": "ジョリーパスタ 名護店",
     "category": "restaurant",
     "region_group": "北部",
@@ -983,7 +983,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12876542801），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12876542801），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-rest-12903832035",
@@ -1021,7 +1021,7 @@
   },
   {
     "id": "osm-rest-13021137193",
-    "name": "金沢まいもん寿司",
+    "name": "金澤まいもん壽司",
     "name_local": "金沢まいもん寿司",
     "category": "restaurant",
     "region_group": "南部",
@@ -1051,7 +1051,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13021137193），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 13021137193），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-rest-13022143808",
@@ -1293,7 +1293,7 @@
   },
   {
     "id": "osm-rest-13716549922",
-    "name": "ロイヤルホスト",
+    "name": "Royal Host",
     "name_local": "ロイヤルホスト",
     "category": "restaurant",
     "region_group": "南部",
@@ -1323,7 +1323,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13716549922），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 13716549922），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-rest-13730263900",
@@ -1565,7 +1565,7 @@
   },
   {
     "id": "osm-rest-1995215717",
-    "name": "想作和食 花浅葱",
+    "name": "想作和食 花淺葱",
     "name_local": "想作和食 花浅葱",
     "category": "restaurant",
     "region_group": "中部",
@@ -1595,7 +1595,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1995215717），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1995215717），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-rest-1995215734",
@@ -1633,7 +1633,7 @@
   },
   {
     "id": "osm-rest-1995215744",
-    "name": "あけぼの弁当",
+    "name": "曙光便當",
     "name_local": "あけぼの弁当",
     "category": "restaurant",
     "region_group": "中部",
@@ -1663,7 +1663,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1995215744），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1995215744），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-rest-1995215756",
@@ -1735,7 +1735,7 @@
   },
   {
     "id": "osm-rest-1995215770",
-    "name": "中本てんぷら店",
+    "name": "中本天婦羅店",
     "name_local": "中本てんぷら店",
     "category": "restaurant",
     "region_group": "南部",
@@ -1765,11 +1765,11 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1995215770），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1995215770），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-rest-2167148517",
-    "name": "焼肉乃我那覇",
+    "name": "燒肉乃我那霸",
     "name_local": "焼肉乃我那覇",
     "category": "restaurant",
     "region_group": "北部",
@@ -1799,11 +1799,11 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 2167148517），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 2167148517），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
   },
   {
     "id": "osm-rest-2883289307",
-    "name": "そら食堂",
+    "name": "天空食堂",
     "name_local": "そら食堂",
     "category": "restaurant",
     "region_group": "南部",
@@ -1833,7 +1833,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 2883289307），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 2883289307），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-rest-3792759951",
@@ -1939,7 +1939,7 @@
   },
   {
     "id": "osm-rest-4330713892",
-    "name": "案本食堂",
+    "name": "岸本食堂",
     "name_local": "きしもと食堂",
     "category": "restaurant",
     "region_group": "北部",
@@ -1969,7 +1969,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4330713892），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 4330713892），travel_mode/停車/親子適合度等待補充｜OSM社群提供的name:zh標籤疑似有誤植（字形相近字誤打），已人工訂正"
   },
   {
     "id": "osm-rest-4330721291",
@@ -2007,7 +2007,7 @@
   },
   {
     "id": "osm-rest-4360209689",
-    "name": "花苙",
+    "name": "花笠食堂",
     "name_local": "花笠食堂",
     "category": "restaurant",
     "region_group": "南部",
@@ -2037,7 +2037,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4360209689），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 4360209689），travel_mode/停車/親子適合度等待補充｜OSM社群提供的name:zh標籤疑似有誤植（字形相近字誤打），已人工訂正"
   },
   {
     "id": "osm-rest-4751048522",
@@ -2075,7 +2075,7 @@
   },
   {
     "id": "osm-rest-4780279222",
-    "name": "山の茶屋・楽水",
+    "name": "山之茶屋・樂水",
     "name_local": "山の茶屋・楽水",
     "category": "restaurant",
     "region_group": "南部",
@@ -2105,7 +2105,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4780279222），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 4780279222），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
   },
   {
     "id": "osm-rest-4846870521",
