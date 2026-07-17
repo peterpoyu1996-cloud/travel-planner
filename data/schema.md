@@ -56,4 +56,5 @@
 
 - `attractions.json` / `hotels.json` / `restaurants.json` 目前只有從使用者 2024/1/7–1/11 沖繩行程 Excel 轉錄的種子資料（`source: "excel_seed"`）
 - `lat`/`lng`/`rating` 等欄位 Excel 沒有提供，先標 `null`，待後續跑 geocoding 或官網查證再補，**不可用猜測值填入**
+- 原始 Excel 檔案是個人行程資料，**刻意不進版控**（見 `.gitignore` 的 `*.xlsx`），只有轉錄、去識別化後的 JSON 才進 repo
 - 下一步：`scraper/sources/osm_overpass.py` 補齊經緯度與更多景點廣度
