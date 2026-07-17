@@ -31,8 +31,9 @@ def matches_conditions(entry: dict, conditions: TripConditions) -> bool:
         if BUDGET_ORDER.get(entry["budget_level"], 99) > BUDGET_ORDER.get(conditions.budget_level, 99):
             return False
 
-    if not conditions.has_car and entry.get("travel_mode") == "開車" and not entry.get("has_parking"):
-        # 沒租車又沒有大眾運輸可達提示的景點，先保守排除
+    if not conditions.has_car and entry.get("travel_mode") == "開車":
+        # 沒租車就排除「需要開車」的景點——注意 has_parking 跟這件事無關
+        # （有沒有停車場不代表沒車去得了），之前誤把兩者混在一起判斷過
         return False
 
     return True
