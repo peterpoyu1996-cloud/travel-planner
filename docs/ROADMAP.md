@@ -26,14 +26,17 @@ ROADMAP.md 是「這些已同意的功能，大概什麼順序上線」。
 | 前後端整合驗證 | ✅ | health check + 端對端請求已用 Demo Provider 驗證通過 |
 | 瀏覽器實機操作驗證 | ⏳ | 下一步 |
 | 真實 LLM（付費 API）生成品質驗證 | ⏳ | 需使用者提供 API key + 設定 spend limit |
-| GitHub repo 結構＋文件治理 | 🚧 | 本次進行中 |
+| GitHub repo 結構＋文件治理 | ✅ | |
+| 範例情境 Demo（前端預生成，零成本） | ✅ | 4 個人設情境按鈕，含刻意留白的誠實案例 |
+| region_group 標準化為北中南三分法 | ✅ | 見 [data/schema.md](../data/schema.md) |
+| OSM 廣度資料匯入（`scraper/ingest_osm.py`） | ✅ | 15 筆種子資料擴充到 165 筆（景點67/飯店33/餐廳65） |
 
 ## Phase 1：資料廣度與品質補強
 
 | 項目 | 狀態 | 備註 |
 |---|---|---|
 | 指定並實作 B 級官網爬蟲（OCVB 等） | ⏳ | 補景點描述、營業時間 |
-| 飯店資料補強 | ⏳ | OSM 覆蓋率低，可能仍需半人工整理 |
+| OSM 匯入資料補核心決策欄位 | ⏳ | 165 筆裡 150 筆是 `source: "osm"`，MapCode/停車/親子適合度/travel_mode 都是 null，需人工或 `enrich_llm.py` 補 |
 | MapCode 缺漏補齊（心形岩/古宇利塔等） | ⏳ | 目前僅 Excel 有的才有，需人工查詢工具 |
 | `enrich_llm.py` 實際跑一輪標註親子適合度等欄位 | ⏳ | 需 API key，成本已估算 <$1 |
 | 知識庫規模擴充到 80-150 筆 | ⏳ | 對應 PRD 資料規模估算 |

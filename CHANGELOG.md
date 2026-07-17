@@ -11,6 +11,22 @@
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-07-18
+
+### Added
+- 建立 GitHub repo 治理文件：README、CLAUDE.md（專案規則）、ROADMAP、Conventional Commits 規範、CI（backend/frontend build check）、PR/Issue 範本
+- 前端新增 4 個預先產生的範例情境按鈕（夫妻開車/不開車、四口之家玩水、六口之家老少平衡），零 API 成本、即點即看
+- 重新設計行程顯示與表單 UI（分頁、卡片、深色模式）
+- 新增 `scraper/ingest_osm.py`：從 OSM 原始資料匯入廣度資料，知識庫從 15 筆擴充到 165 筆（景點67/飯店33/餐廳65）
+- `region_group` 標準化為沖繩本島標準三分法（北部/中部/南部），細節搬到新的 `sub_area` 欄位
+
+### Fixed
+- `filters.py`：`has_car=false` 時原本誤用「有沒有停車場」判斷能不能去，跟真正的「需不需要開車」邏輯無關，已修正為直接依 `travel_mode` 排除
+- `scraper/ingest_osm.py` 去重比對從精確字串相等改成雙向子字串包含，修正「大家」誤配到已存在種子資料「百年古家 大家」的重複問題
+
+### Changed
+- 個人行程 Excel 原始檔從 git 歷史完整移除（改用 `git filter-branch`），避免公開 repo 外流個人資料，只保留去識別化後的 JSON
+
 ## [0.1.0] - 2026-07-18
 
 ### Added
