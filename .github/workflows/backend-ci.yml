@@ -1,0 +1,47 @@
+name: backend-ci
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "backend/**"
+      - "scraper/**"
+      - "data/**"
+      - ".github/workflows/backend-ci.yml"
+  pull_request:
+    paths:
+      - "backend/**"
+      - "scraper/**"
+      - "data/**"
+      - ".github/workflows/backend-ci.yml"
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r backend/requirements.txt -r scraper/requirements.txt
+
+      - name: Validate knowledge base JSON
+        run: |
+          python -c "
+          import json, pathlib
+          for f in pathlib.Path('data').glob('*.json'):
+              json.loads(f.read_text(encoding='utf-8'))
+              print(f'OK: {f}')
+          "
+
+      - name: Import FastAPI app
+        run: |
+          python -c "
+          import sys
+          sys.path.insert(0, 'backend')
+          from app.main import app
+          print('FastAPI app imported OK:', app.title)
+          "
