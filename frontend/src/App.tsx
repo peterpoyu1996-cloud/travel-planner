@@ -66,7 +66,7 @@ function App() {
         {mode === 'scenarios' && (
           <>
             <p className="section-intro">
-              四個預先產生的範例，直接展示這套系統怎麼根據不同家庭組成給出不同（甚至誠實留白的）建議，點擊即看，不呼叫 API。
+              預先產生的範例，點擊即看、不呼叫 API，可以並排比較「知識庫實際計算」跟「直接問 Claude Chat」兩種產出方式的差異。
             </p>
             <ScenarioPicker activeId={activeScenarioId} onSelect={setActiveScenarioId} />
             {activeScenario && (
