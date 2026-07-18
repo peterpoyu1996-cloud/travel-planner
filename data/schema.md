@@ -5,8 +5,9 @@
 ```jsonc
 {
   "id": "string，唯一識別碼，例：kouri-tower",
-  "name": "string，中文名稱",
+  "name": "string，中文名稱（有把握才會填中文，沒把握時保持跟 name_local 一樣，不硬翻）",
   "name_local": "string，日文原名",
+  "translated_name": "string，name_local 的中文翻譯，一定會是中文；name 本來就是中文時兩欄位相同，name 還是日文時這欄放 LLM 輔助翻譯結果（見下方說明），UI 顯示建議優先用這欄，避免畫面出現未翻譯的日文",
   "category": "attraction | hotel | restaurant",
   "region_group": "北部 | 中部 | 南部（沖繩本島標準三分法，供地理動線分群/篩選用，見下方緯度分界）",
   "sub_area": "string | null，更細的地標區域，例：美國村 / 瀨長島 / 國際通周邊，不影響篩選，只是額外描述",
@@ -81,9 +82,22 @@
 
 - 45 筆本來就是純漢字、字元剛好跟繁體中文相同，不用改
 - 46 筆已轉換/翻譯成繁體中文（含機械轉換、LLM翻譯、OSM社群提供的 `name:zh`/`name:zh-Hant` 標籤）
-- 59 筆含假名（片假名/平假名），沒有把握正確翻譯，**刻意保留日文原名**（`name` 等於 `name_local`），
+- 59 筆含假名（片假名/平假名），`name` 沒有把握正確翻譯，**刻意保留日文原名**（`name` 等於 `name_local`），
   這是刻意的取捨，避免翻錯誤導使用者，不是漏做
 
 ⚠️ **踩過的坑**：OSM 社群提供的 `name:zh`/`name:zh-Hant` 標籤不是自動信任的來源，發現過至少 2 筆
 明顯的形近字誤植（例如「岸本食堂」被標成「案本食堂」、「花笠食堂」被標成「花苙」）。已人工訂正這兩筆，
 但沒有逐筆全部覆核，之後若要大量信任 OSM 的中文標籤，建議先抽樣驗證。
+
+## translated_name 欄位（`scraper/add_translated_name.py`）
+
+因為前台顯示不該出現「還沒翻譯的日文」，所以另外加了 `translated_name` 欄位，
+一定是中文，跟上面謹慎保守的 `name` 欄位分開：
+
+- 上面那 91 筆（45+46）`name` 已經是中文的，`translated_name` = `name`，兩欄位一樣
+- 剩下 59 筆 `name` 還是日文的，`translated_name` 放 LLM 輔助翻譯結果（`name` 保持不動）
+
+這批翻譯裡有不少沖繩方言詞彙（バンタ、ゆいまーる、ぶくぶく、なかゆくい 這類），
+是音譯兼意譯，**不保證跟當地慣用譯名一致**，信心程度比「name 已經是中文」那 91 筆低。
+要判斷一筆資料的翻譯可不可靠，比較 `name` 是否等於 `name_local` 就知道：
+不相等 = 這筆 `translated_name` 是新翻的、信心較低。

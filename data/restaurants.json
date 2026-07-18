@@ -31,7 +31,8 @@
     "description_for_embedding": null,
     "source": "excel_seed",
     "source_note": "涮涮鍋 5800日圓/兩人份，需先預訂 | OSM比對: 大家",
-    "sub_area": null
+    "sub_area": null,
+    "translated_name": "百年古家 大家 阿古豬"
   },
   {
     "id": "hamanoya",
@@ -65,7 +66,8 @@
     "description_for_embedding": "吃黃魚料理",
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day4 中午",
-    "sub_area": null
+    "sub_area": null,
+    "translated_name": "濱の家"
   },
   {
     "id": "ryukyu-no-ushi-chatan",
@@ -99,7 +101,8 @@
     "description_for_embedding": null,
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day6 晚上 | OSM比對: 琉球の牛",
-    "sub_area": "美國村"
+    "sub_area": "美國村",
+    "translated_name": "琉球之牛 北谷店"
   },
   {
     "id": "yakiniku-motobu-bokujo",
@@ -133,7 +136,8 @@
     "description_for_embedding": null,
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day7 晚上 | OSM比對: もとぶ牧場",
-    "sub_area": null
+    "sub_area": null,
+    "translated_name": "燒肉本部牧場"
   },
   {
     "id": "bakumo-ramen",
@@ -167,7 +171,8 @@
     "description_for_embedding": null,
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day7 晚上，瀨長島溫泉飯店旁",
-    "sub_area": "瀨長島"
+    "sub_area": "瀨長島",
+    "translated_name": "暖暮拉麵"
   },
   {
     "id": "osm-rest-1558481078",
@@ -201,7 +206,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1558481078），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 1558481078），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "CoCo壹番屋"
   },
   {
     "id": "osm-rest-1995215709",
@@ -235,7 +241,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1995215709），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1995215709），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "鶴小"
   },
   {
     "id": "osm-rest-1995215764",
@@ -269,7 +276,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1995215764），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1995215764），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "海濱得來速餐廳"
   },
   {
     "id": "osm-rest-4402466094",
@@ -303,7 +311,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4402466094），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 4402466094），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "隨時吃早餐 本店"
   },
   {
     "id": "osm-rest-4489395093",
@@ -337,7 +346,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4489395093），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 4489395093），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "燒肉本舗 島牛"
   },
   {
     "id": "osm-rest-5413612723",
@@ -371,7 +381,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5413612723），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 5413612723），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Noricce"
   },
   {
     "id": "osm-rest-5884951586",
@@ -405,7 +416,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5884951586），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 5884951586），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "A&W"
   },
   {
     "id": "osm-rest-6187521385",
@@ -439,7 +451,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 6187521385），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 6187521385），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "一番餃子屋"
   },
   {
     "id": "osm-rest-6432514592",
@@ -473,7 +486,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 6432514592），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 6432514592），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "南谷茶房"
   },
   {
     "id": "osm-rest-6845961585",
@@ -507,7 +521,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 6845961585），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 6845961585），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "HANAHOU"
   },
   {
     "id": "osm-rest-10573155101",
@@ -541,7 +556,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 10573155101），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 10573155101），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "中華料理 喜悅家"
   },
   {
     "id": "osm-rest-11214895437",
@@ -575,7 +591,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11214895437），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 11214895437），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "串炸田中"
   },
   {
     "id": "osm-rest-11390871235",
@@ -609,7 +626,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11390871235），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11390871235），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "支那蕎麥麵 嘉手苅"
   },
   {
     "id": "osm-rest-11679566896",
@@ -643,7 +661,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11679566896），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11679566896），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "hali hali"
   },
   {
     "id": "osm-rest-11679566966",
@@ -677,7 +696,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11679566966），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11679566966），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Mike's Hanbi店"
   },
   {
     "id": "osm-rest-11801994051",
@@ -711,7 +731,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11801994051），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11801994051），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "Indira"
   },
   {
     "id": "osm-rest-11936431766",
@@ -745,7 +766,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11936431766），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11936431766），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "古民家食堂 Tiirabui"
   },
   {
     "id": "osm-rest-12047299432",
@@ -779,7 +801,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12047299432），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12047299432），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "膳"
   },
   {
     "id": "osm-rest-12069082796",
@@ -813,7 +836,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12069082796），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12069082796），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "石窯披薩酒場 Maruki"
   },
   {
     "id": "osm-rest-12202937521",
@@ -847,7 +871,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12202937521），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12202937521），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "YOMITAN魔女咖哩 惠庵"
   },
   {
     "id": "osm-rest-12681372539",
@@ -881,7 +906,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12681372539），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12681372539），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "Soup Soup"
   },
   {
     "id": "osm-rest-12715681091",
@@ -915,7 +941,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12715681091），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12715681091），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "彩虹咖啡 Nijiiro Cafe"
   },
   {
     "id": "osm-rest-12872439918",
@@ -949,7 +976,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12872439918），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12872439918），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "拉麵暖暮 北谷砂邊店"
   },
   {
     "id": "osm-rest-12876542801",
@@ -983,7 +1011,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12876542801），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 12876542801），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "Jolly Pasta 名護店"
   },
   {
     "id": "osm-rest-12903832035",
@@ -1017,7 +1046,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12903832035），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12903832035），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "座喜味蕎麥麵"
   },
   {
     "id": "osm-rest-13021137193",
@@ -1051,7 +1081,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13021137193），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 13021137193），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "金澤まいもん壽司"
   },
   {
     "id": "osm-rest-13022143808",
@@ -1085,7 +1116,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13022143808），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 13022143808），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Airando Fiji Cafe（斐濟島咖啡）"
   },
   {
     "id": "osm-rest-13030858746",
@@ -1119,7 +1151,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13030858746），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 13030858746），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "Morning Works"
   },
   {
     "id": "osm-rest-13038567300",
@@ -1153,7 +1186,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13038567300），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 13038567300），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "SUNNY TACOS"
   },
   {
     "id": "osm-rest-13383724905",
@@ -1187,7 +1221,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13383724905），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 13383724905），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "105 DELI&肉酒場"
   },
   {
     "id": "osm-rest-13390966851",
@@ -1221,7 +1256,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13390966851），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 13390966851），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "拉麵札幌屋"
   },
   {
     "id": "osm-rest-13619614506",
@@ -1255,7 +1291,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13619614506），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 13619614506），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "Royal Myanmar"
   },
   {
     "id": "osm-rest-13700547516",
@@ -1289,7 +1326,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13700547516），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 13700547516），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "金月蕎麥麵讀谷本店"
   },
   {
     "id": "osm-rest-13716549922",
@@ -1323,7 +1361,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13716549922），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 13716549922），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "Royal Host"
   },
   {
     "id": "osm-rest-13730263900",
@@ -1357,7 +1396,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13730263900），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 13730263900），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "燒肉食堂 Kouya"
   },
   {
     "id": "osm-rest-13887673122",
@@ -1391,7 +1431,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13887673122），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 13887673122），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "花蓮"
   },
   {
     "id": "osm-rest-13908541401",
@@ -1425,7 +1466,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13908541401），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 13908541401），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "悠愉樹庵"
   },
   {
     "id": "osm-rest-13965228200",
@@ -1459,7 +1501,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13965228200），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 13965228200），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "琉球HEAT"
   },
   {
     "id": "osm-rest-1560638499",
@@ -1493,7 +1536,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1560638499），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1560638499），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "Han's"
   },
   {
     "id": "osm-rest-1584590713",
@@ -1527,7 +1571,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1584590713），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1584590713），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "牛角"
   },
   {
     "id": "osm-rest-1864039027",
@@ -1561,7 +1606,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1864039027），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1864039027），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "cafe 帆風"
   },
   {
     "id": "osm-rest-1995215717",
@@ -1595,7 +1641,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1995215717），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 1995215717），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "想作和食 花淺葱"
   },
   {
     "id": "osm-rest-1995215734",
@@ -1629,7 +1676,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1995215734），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1995215734），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "名護曲餐廳"
   },
   {
     "id": "osm-rest-1995215744",
@@ -1663,7 +1711,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1995215744），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 1995215744），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "曙光便當"
   },
   {
     "id": "osm-rest-1995215756",
@@ -1697,7 +1746,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1995215756），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1995215756），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "泰期"
   },
   {
     "id": "osm-rest-1995215757",
@@ -1731,7 +1781,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1995215757），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1995215757），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Mosugu蕎麥麵 Kunnadu"
   },
   {
     "id": "osm-rest-1995215770",
@@ -1765,7 +1816,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1995215770），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 1995215770），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "中本天婦羅店"
   },
   {
     "id": "osm-rest-2167148517",
@@ -1799,7 +1851,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 2167148517），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 2167148517），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "燒肉乃我那霸"
   },
   {
     "id": "osm-rest-2883289307",
@@ -1833,7 +1886,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 2883289307），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 2883289307），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "天空食堂"
   },
   {
     "id": "osm-rest-3792759951",
@@ -1867,7 +1921,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 3792759951），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 3792759951），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Suumanumee"
   },
   {
     "id": "osm-rest-4330706892",
@@ -1901,7 +1956,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4330706892），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 4330706892），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Ohacorte"
   },
   {
     "id": "osm-rest-4330710290",
@@ -1935,7 +1991,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4330710290），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 4330710290），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "C&C Breakfast"
   },
   {
     "id": "osm-rest-4330713892",
@@ -1969,7 +2026,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4330713892），travel_mode/停車/親子適合度等待補充｜OSM社群提供的name:zh標籤疑似有誤植（字形相近字誤打），已人工訂正"
+    "source_note": "OSM匯入（node 4330713892），travel_mode/停車/親子適合度等待補充｜OSM社群提供的name:zh標籤疑似有誤植（字形相近字誤打），已人工訂正",
+    "translated_name": "岸本食堂"
   },
   {
     "id": "osm-rest-4330721291",
@@ -2003,7 +2061,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4330721291），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 4330721291），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "88牛排"
   },
   {
     "id": "osm-rest-4360209689",
@@ -2037,7 +2096,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4360209689），travel_mode/停車/親子適合度等待補充｜OSM社群提供的name:zh標籤疑似有誤植（字形相近字誤打），已人工訂正"
+    "source_note": "OSM匯入（node 4360209689），travel_mode/停車/親子適合度等待補充｜OSM社群提供的name:zh標籤疑似有誤植（字形相近字誤打），已人工訂正",
+    "translated_name": "花笠食堂"
   },
   {
     "id": "osm-rest-4751048522",
@@ -2071,7 +2131,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4751048522），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 4751048522），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "On the Beach咖啡"
   },
   {
     "id": "osm-rest-4780279222",
@@ -2105,7 +2166,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4780279222），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 4780279222），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "山之茶屋・樂水"
   },
   {
     "id": "osm-rest-4846870521",
@@ -2139,7 +2201,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4846870521），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 4846870521），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "麵家Nirai"
   },
   {
     "id": "osm-rest-4931770144",
@@ -2173,7 +2236,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4931770144），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 4931770144），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "Butcher Grill & Bar"
   },
   {
     "id": "osm-rest-5157158921",
@@ -2207,6 +2271,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5157158921），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 5157158921），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "沖繩茶屋 Bukubuku"
   }
 ]

@@ -31,7 +31,8 @@
     "description_for_embedding": null,
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day2 上午",
-    "sub_area": null
+    "sub_area": null,
+    "translated_name": "心形岩"
   },
   {
     "id": "kouri-tower",
@@ -65,7 +66,8 @@
     "description_for_embedding": null,
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day2 上午，心形岩旁",
-    "sub_area": null
+    "sub_area": null,
+    "translated_name": "古宇利塔"
   },
   {
     "id": "kaichukan-observatory",
@@ -99,7 +101,8 @@
     "description_for_embedding": null,
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day3 上午 | OSM比對: 海中展望塔",
-    "sub_area": null
+    "sub_area": null,
+    "translated_name": "海中觀景塔"
   },
   {
     "id": "churaumi-aquarium",
@@ -133,7 +136,8 @@
     "description_for_embedding": null,
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day5 下午",
-    "sub_area": null
+    "sub_area": null,
+    "translated_name": "美麗海水族館"
   },
   {
     "id": "okinawa-kodomo-no-kuni",
@@ -167,7 +171,8 @@
     "description_for_embedding": null,
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day5 下午 | OSM比對: 沖縄こどもの国",
-    "sub_area": null
+    "sub_area": null,
+    "translated_name": "沖繩兒童王國"
   },
   {
     "id": "tomari-fish-market",
@@ -201,7 +206,8 @@
     "description_for_embedding": null,
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day3 傍晚",
-    "sub_area": null
+    "sub_area": null,
+    "translated_name": "泊港漁市場"
   },
   {
     "id": "kokusai-street",
@@ -235,7 +241,8 @@
     "description_for_embedding": null,
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day2/Day5 早上，早餐去牧志市場吃飯糰壽司 | OSM比對: 国際通り",
-    "sub_area": null
+    "sub_area": null,
+    "translated_name": "國際通"
   },
   {
     "id": "osm-attr-1068015481",
@@ -269,7 +276,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068015481），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 1068015481），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "宜野灣市立博物館"
   },
   {
     "id": "osm-attr-5076211521",
@@ -303,7 +311,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5076211521），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 5076211521），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "國際海洋資訊中心"
   },
   {
     "id": "osm-attr-11936491418",
@@ -337,7 +346,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11936491418），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11936491418），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "清海農場"
   },
   {
     "id": "osm-attr-1068031771",
@@ -371,7 +381,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068031771），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1068031771），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "浦添市美術館"
   },
   {
     "id": "osm-attr-1068041707",
@@ -405,7 +416,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068041707），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 1068041707），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "諸見民藝館"
   },
   {
     "id": "osm-attr-5242685323",
@@ -439,7 +451,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5242685323），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 5242685323），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "森林冒險IN恩納"
   },
   {
     "id": "osm-attr-5885029905",
@@ -473,7 +486,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5885029905），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 5885029905），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "沖繩工藝村"
   },
   {
     "id": "osm-attr-7914430529",
@@ -507,7 +521,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 7914430529），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 7914430529），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "金城哲夫資料館"
   },
   {
     "id": "osm-attr-11384600037",
@@ -541,7 +556,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11384600037），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11384600037），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "安須杜健行步道"
   },
   {
     "id": "osm-attr-12357446756",
@@ -575,7 +591,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12357446756），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12357446756），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "北谷町立博物館"
   },
   {
     "id": "osm-attr-2005581139",
@@ -609,7 +626,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "official_site",
-    "source_note": "OSM匯入（node 2005581139），travel_mode/停車/親子適合度等待補充｜資訊查證自 okinawa-nanjo.jp 官網（2026-07查證）"
+    "source_note": "OSM匯入（node 2005581139），travel_mode/停車/親子適合度等待補充｜資訊查證自 okinawa-nanjo.jp 官網（2026-07查證）",
+    "translated_name": "齋場御嶽"
   },
   {
     "id": "osm-attr-2771807107",
@@ -643,7 +661,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 2771807107），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 2771807107），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "沖繩市立鄉土博物館"
   },
   {
     "id": "osm-attr-4374980875",
@@ -677,7 +696,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4374980875），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 4374980875），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "Tiger Patch Shop"
   },
   {
     "id": "osm-attr-5310917321",
@@ -711,7 +731,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5310917321），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 5310917321），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "展示廣場"
   },
   {
     "id": "osm-attr-5325219237",
@@ -745,7 +766,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5325219237），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 5325219237），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "沖繩市戰後文化資料展示室 Histreet"
   },
   {
     "id": "osm-attr-5885009907",
@@ -779,7 +801,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5885009907），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 5885009907），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "伊江海灘"
   },
   {
     "id": "osm-attr-8226624094",
@@ -813,7 +836,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 8226624094），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 8226624094），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "沖繩市音樂資料館 音樂村"
   },
   {
     "id": "osm-attr-602900690",
@@ -847,7 +871,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 602900690），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 602900690），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "沖繩縣平和祈念資料館"
   },
   {
     "id": "osm-attr-1068010664",
@@ -881,7 +906,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068010664），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 1068010664），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "東南植物樂園"
   },
   {
     "id": "osm-attr-1068014185",
@@ -915,7 +941,8 @@
     "budget_level": null,
     "description_for_embedding": "鍾乳洞玉泉洞、琉球王國城下町工藝體驗、熱帶水果園，親子友善的綜合觀光園區",
     "source": "official_site",
-    "source_note": "OSM匯入（node 1068014185），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正｜MapCode/營業時間查證自官網 gyokusendo.co.jp（2026-07查證）"
+    "source_note": "OSM匯入（node 1068014185），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正｜MapCode/營業時間查證自官網 gyokusendo.co.jp（2026-07查證）",
+    "translated_name": "沖繩世界 玉泉洞"
   },
   {
     "id": "osm-attr-1068016179",
@@ -949,7 +976,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068016179），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 1068016179），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "埋藏文化財中心"
   },
   {
     "id": "osm-attr-1068017752",
@@ -983,7 +1011,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068017752），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1068017752），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "宇流麻市立石川歷史民俗資料館"
   },
   {
     "id": "osm-attr-1068022281",
@@ -1017,7 +1046,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068022281），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 1068022281），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "歷史民俗資料展示室"
   },
   {
     "id": "osm-attr-1068027240",
@@ -1051,7 +1081,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068027240），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 1068027240），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "具志頭歷史民俗資料館"
   },
   {
     "id": "osm-attr-1068028521",
@@ -1085,7 +1116,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068028521），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 1068028521），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "國營沖繩紀念公園熱帶亞熱帶都市綠化植物園"
   },
   {
     "id": "osm-attr-1068028895",
@@ -1119,7 +1151,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068028895），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 1068028895），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "國營沖繩記念公園海洋文化館"
   },
   {
     "id": "osm-attr-1068032145",
@@ -1153,7 +1186,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068032145），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1068032145），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "東村立山與水生活博物館"
   },
   {
     "id": "osm-attr-1068038865",
@@ -1187,7 +1221,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068038865），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1068038865），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "宇流麻市立海洋文化資料館"
   },
   {
     "id": "osm-attr-1068042376",
@@ -1221,7 +1256,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1068042376），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 1068042376），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "東風平歷史民俗資料館"
   },
   {
     "id": "osm-attr-1068043305",
@@ -1255,7 +1291,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "official_site",
-    "source_note": "OSM匯入（node 1068043305），travel_mode/停車/親子適合度等待補充｜營業時間/停車資訊查證自官網 oki-park.jp（2026-07查證）"
+    "source_note": "OSM匯入（node 1068043305），travel_mode/停車/親子適合度等待補充｜營業時間/停車資訊查證自官網 oki-park.jp（2026-07查證）",
+    "translated_name": "首里城公園"
   },
   {
     "id": "osm-attr-2002204635",
@@ -1289,7 +1326,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 2002204635），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 2002204635），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "美背福木林道"
   },
   {
     "id": "osm-attr-2004299632",
@@ -1323,7 +1361,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 2004299632），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 2004299632），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Helios酒造"
   },
   {
     "id": "osm-attr-2004388445",
@@ -1357,7 +1396,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 2004388445），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 2004388445），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "奧利恩樂園"
   },
   {
     "id": "osm-attr-4359643300",
@@ -1391,7 +1431,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4359643300），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 4359643300），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "恩納冒險"
   },
   {
     "id": "osm-attr-4788735123",
@@ -1425,7 +1466,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4788735123），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 4788735123），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "市場本通"
   },
   {
     "id": "osm-attr-5214886031",
@@ -1459,7 +1501,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5214886031），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 5214886031），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "琉球新報 新聞博物館"
   },
   {
     "id": "osm-attr-5340095140",
@@ -1493,7 +1536,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5340095140），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 5340095140），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "金城町石疊道"
   },
   {
     "id": "osm-attr-5606759626",
@@ -1527,7 +1571,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5606759626），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 5606759626），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "Banananesia"
   },
   {
     "id": "osm-attr-5885017123",
@@ -1561,7 +1606,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5885017123），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 5885017123），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "迷你馬"
   },
   {
     "id": "osm-attr-7683363814",
@@ -1595,7 +1641,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 7683363814），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 7683363814），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "不屈館"
   },
   {
     "id": "osm-attr-10294865017",
@@ -1629,7 +1676,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 10294865017），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 10294865017），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "沖繩歷史民俗資料館"
   },
   {
     "id": "osm-attr-11215905557",
@@ -1663,7 +1711,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11215905557），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11215905557），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "海與丘展望台"
   },
   {
     "id": "osm-attr-11656238814",
@@ -1697,7 +1746,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11656238814），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11656238814），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "Little Universe OKINAWA"
   },
   {
     "id": "osm-attr-12519606583",
@@ -1731,7 +1781,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12519606583），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12519606583），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "Sea Lake Zakimi Private Dog Park"
   },
   {
     "id": "osm-attr-13021850942",
@@ -1765,7 +1816,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13021850942），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 13021850942），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "恐龍探索樂園"
   },
   {
     "id": "osm-attr-13340657801",
@@ -1799,7 +1851,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13340657801），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 13340657801），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "沖繩便便博物館"
   },
   {
     "id": "osm-attr-13615396316",
@@ -1833,7 +1886,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13615396316），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 13615396316），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "沖繩地區稅關廣報展示室"
   },
   {
     "id": "osm-attr-13740236877",
@@ -1867,7 +1921,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13740236877），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 13740236877），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "虛擬博物館"
   },
   {
     "id": "osm-attr-602895164",
@@ -1901,7 +1956,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "official_site",
-    "source_note": "OSM匯入（node 602895164），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正｜資訊查證自糸滿市觀光協會網站（2026-07查證）"
+    "source_note": "OSM匯入（node 602895164），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正｜資訊查證自糸滿市觀光協會網站（2026-07查證）",
+    "translated_name": "姬百合和平祈念資料館"
   },
   {
     "id": "osm-attr-602936534",
@@ -1935,7 +1991,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "official_site",
-    "source_note": "OSM匯入（node 602936534），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯｜停車資訊查證自旅遊部落格彙整（2026-07查證），MapCode未查到"
+    "source_note": "OSM匯入（node 602936534），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯｜停車資訊查證自旅遊部落格彙整（2026-07查證），MapCode未查到",
+    "translated_name": "殘波岬"
   },
   {
     "id": "osm-attr-1079092630",
@@ -1969,7 +2026,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1079092630），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯"
+    "source_note": "OSM匯入（node 1079092630），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
+    "translated_name": "舊海軍司令部壕"
   },
   {
     "id": "osm-attr-1094909470",
@@ -2003,7 +2061,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1094909470），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1094909470），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "Kouri Island North Beach"
   },
   {
     "id": "osm-attr-1203800390",
@@ -2037,7 +2096,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1203800390），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1203800390），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "石門"
   },
   {
     "id": "osm-attr-1563212509",
@@ -2071,7 +2131,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1563212509），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1563212509），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "西展望台"
   },
   {
     "id": "osm-attr-1717637950",
@@ -2105,7 +2166,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1717637950），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1717637950），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "安保瞭望之丘"
   },
   {
     "id": "osm-attr-1993614008",
@@ -2139,7 +2201,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1993614008），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1993614008），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "海中道路"
   },
   {
     "id": "osm-attr-1993614029",
@@ -2173,7 +2236,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1993614029），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1993614029），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "南展望台"
   },
   {
     "id": "osm-attr-1993614054",
@@ -2207,7 +2271,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1993614054），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1993614054），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "果報崖/幸福岬"
   },
   {
     "id": "osm-attr-1993614062",
@@ -2241,7 +2306,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1993614062），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1993614062），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "悠閒歇腳處（那卡由庫伊）"
   },
   {
     "id": "osm-attr-1993614070",
@@ -2275,6 +2341,7 @@
     "budget_level": null,
     "description_for_embedding": "沖繩本島知名浮潛/潛水景點，鄰近青之洞窟（青の洞窟），可玩水體驗珊瑚礁與熱帶魚",
     "source": "official_site",
-    "source_note": "OSM匯入（node 1993614070），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯｜MapCode查證自旅遊部落格彙整（2026-07查證）"
+    "source_note": "OSM匯入（node 1993614070），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯｜MapCode查證自旅遊部落格彙整（2026-07查證）",
+    "translated_name": "真榮田岬"
   }
 ]

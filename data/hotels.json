@@ -31,7 +31,8 @@
     "description_for_embedding": null,
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day2 CHECK IN",
-    "sub_area": null
+    "sub_area": null,
+    "translated_name": "美麗海村公寓"
   },
   {
     "id": "naha-nikko-city-hotel",
@@ -65,7 +66,8 @@
     "description_for_embedding": null,
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day6 CHECK IN",
-    "sub_area": null
+    "sub_area": null,
+    "translated_name": "那霸日航都市飯店"
   },
   {
     "id": "senaga-island-hotel",
@@ -99,7 +101,8 @@
     "description_for_embedding": "溫泉飯店，鄰近暖暮拉麵、TOM PLAZA超市",
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day7 CHECK IN",
-    "sub_area": "瀨長島"
+    "sub_area": "瀨長島",
+    "translated_name": "琉球溫泉 瀨長島飯店"
   },
   {
     "id": "osm-hotel-1583677053",
@@ -133,7 +136,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1583677053），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 1583677053），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "東橫INN那霸新都心Omoromachi"
   },
   {
     "id": "osm-hotel-1583677055",
@@ -167,7 +171,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1583677055），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 1583677055），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Almont飯店"
   },
   {
     "id": "osm-hotel-2676267351",
@@ -201,7 +206,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 2676267351），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 2676267351），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "蒙特雷飯店沖繩 溫泉度假村"
   },
   {
     "id": "osm-hotel-4673553180",
@@ -235,7 +241,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4673553180），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 4673553180），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "北方Yuimaru本館"
   },
   {
     "id": "osm-hotel-4742180621",
@@ -269,7 +276,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4742180621），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 4742180621），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "413濱比嘉 Hotel & Cafe"
   },
   {
     "id": "osm-hotel-5010880558",
@@ -303,7 +311,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5010880558），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正"
+    "source_note": "OSM匯入（node 5010880558），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
+    "translated_name": "Smile飯店那霸城市度假村"
   },
   {
     "id": "osm-hotel-5885046890",
@@ -337,7 +346,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5885046890），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 5885046890），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Star House小屋"
   },
   {
     "id": "osm-hotel-6522173518",
@@ -371,7 +381,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 6522173518），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 6522173518），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Y's CABIN&HOTEL 那霸國際通"
   },
   {
     "id": "osm-hotel-7244186054",
@@ -405,7 +416,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 7244186054），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 7244186054），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Kaeru-ya 純住宿民宿"
   },
   {
     "id": "osm-hotel-7244193426",
@@ -439,7 +451,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 7244193426），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 7244193426），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Fuuran 古民家民宿"
   },
   {
     "id": "osm-hotel-7923784018",
@@ -473,7 +486,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 7923784018），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 7923784018），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "Hilton Okinawa Sesoko Resort"
   },
   {
     "id": "osm-hotel-10820048597",
@@ -507,7 +521,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 10820048597），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 10820048597），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "HOTEL Ala COOJU Okinawa"
   },
   {
     "id": "osm-hotel-11109431705",
@@ -541,7 +556,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11109431705），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11109431705），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Cocktail Stay那霸飯店"
   },
   {
     "id": "osm-hotel-11680864382",
@@ -575,7 +591,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11680864382），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11680864382），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "BiBi Hotel FUTENMA"
   },
   {
     "id": "osm-hotel-11847179923",
@@ -609,7 +626,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11847179923），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11847179923），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "神谷莊（歐吉桑留下的民宿）"
   },
   {
     "id": "osm-hotel-11936431830",
@@ -643,7 +661,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11936431830），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11936431830），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "LAC宇流麻（HAMACHŪ內）"
   },
   {
     "id": "osm-hotel-11936431929",
@@ -677,7 +696,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11936431929），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11936431929），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Tripshot Villas・濱比嘉"
   },
   {
     "id": "osm-hotel-11936431959",
@@ -711,7 +731,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11936431959），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11936431959），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "The Stella・濱比嘉"
   },
   {
     "id": "osm-hotel-11936431978",
@@ -745,7 +766,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11936431978），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11936431978），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "totono house 吉本家"
   },
   {
     "id": "osm-hotel-11936432037",
@@ -779,7 +801,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11936432037），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 11936432037），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "古民家 あさひ"
   },
   {
     "id": "osm-hotel-12008683880",
@@ -813,7 +836,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12008683880），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12008683880），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "歌聲民宿Māminā"
   },
   {
     "id": "osm-hotel-12008911491",
@@ -847,7 +871,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12008911491），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12008911491），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Ernesto殘波"
   },
   {
     "id": "osm-hotel-12047299673",
@@ -881,7 +906,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12047299673），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12047299673），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Grand Style沖繩 讀谷飯店&度假村"
   },
   {
     "id": "osm-hotel-12056711144",
@@ -915,7 +941,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12056711144），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12056711144），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "讀谷公寓飯店ND"
   },
   {
     "id": "osm-hotel-12060293526",
@@ -949,7 +976,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12060293526），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12060293526），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Blue Steak Wonder 瀨名波 沖繩讀谷"
   },
   {
     "id": "osm-hotel-12071200750",
@@ -983,7 +1011,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12071200750），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12071200750），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "沖繩讀谷 設計師公寓飯店"
   },
   {
     "id": "osm-hotel-12111616076",
@@ -1017,7 +1046,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12111616076），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12111616076），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "BLUE STEAK WONDER NAGAHAMA"
   },
   {
     "id": "osm-hotel-12181223789",
@@ -1051,7 +1081,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12181223789），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12181223789），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Coral Garden Seven Pools"
   },
   {
     "id": "osm-hotel-12210491788",
@@ -1085,7 +1116,8 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12210491788），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12210491788），travel_mode/停車/親子適合度等待補充",
+    "translated_name": "Condominium T-Room"
   },
   {
     "id": "osm-hotel-12243159695",
@@ -1119,6 +1151,7 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12243159695），travel_mode/停車/親子適合度等待補充"
+    "source_note": "OSM匯入（node 12243159695），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Avian海濱小屋"
   }
 ]
