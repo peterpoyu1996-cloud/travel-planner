@@ -1,5 +1,8 @@
 """共用的地理距離工具。直線距離（haversine），不是實際路況時間，
 但零成本、不用外部服務，拿來做「這兩個點大概近不近」的粗估很夠用。
+
+放在 common/ 而不是 scraper/ 或 backend/app/，因為兩邊都要用：scraper 拿來做
+離線分析/畫圖，backend 拿來在行程生成時算真實車程（見 backend/app/itinerary.py）。
 """
 
 import math

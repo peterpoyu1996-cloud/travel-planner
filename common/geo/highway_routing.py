@@ -12,11 +12,12 @@
 
 import heapq
 import json
+from functools import lru_cache
 from pathlib import Path
 
-from geo_utils import haversine_km
+from .geo_utils import haversine_km
 
-DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+DATA_DIR = Path(__file__).resolve().parents[2] / "data"
 
 NodeKey = tuple[float, float]
 
@@ -25,8 +26,13 @@ def _key(lat: float, lon: float) -> NodeKey:
     return (round(lat, 5), round(lon, 5))
 
 
+@lru_cache(maxsize=1)
 def load_network() -> tuple[dict[NodeKey, list[tuple[NodeKey, float]]], list[dict]]:
-    """回傳 (graph, interchanges)。graph 是 node_key -> [(neighbor_key, distance_km), ...]。"""
+    """回傳 (graph, interchanges)。graph 是 node_key -> [(neighbor_key, distance_km), ...]。
+    加 lru_cache：後端每次生成行程可能要算好幾組點對點距離，圖只要建一次、
+    程序生命週期內重複用，不用每次都重新讀檔+建圖（495段路線建圖不算貴，
+    但行程生成是使用者等待的路徑，能省則省）。
+    """
     data = json.loads((DATA_DIR / "highway_network.json").read_text(encoding="utf-8"))
 
     graph: dict[NodeKey, list[tuple[NodeKey, float]]] = {}

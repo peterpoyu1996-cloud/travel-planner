@@ -14,7 +14,8 @@ import json
 import sys
 from pathlib import Path
 
-from geo_utils import nearest
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from common.geo.geo_utils import nearest
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
