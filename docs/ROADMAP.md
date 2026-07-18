@@ -40,12 +40,13 @@ ROADMAP.md 是「這些已同意的功能，大概什麼順序上線」。
 | 官網研究補核心欄位（首波 6 筆熱門景點） | ✅ | 首里城公園/齋場御嶽/沖繩世界玉泉洞/姬百合資料館/殘波岬/真榮田岬，補了MapCode/停車/營業時間 |
 | 不開車行程地基（haversine + 單軌19站 + 距離標註） | ✅ | 見 data/schema.md「不開車行程的地基」，北部/中部巴士資料還沒解決 |
 | 玩水景點廣度（補 OSM natural=beach 查詢） | ✅ | 新增 25 筆命名海灘，但只有座標，缺親子/安全性資訊 |
-| 高速公路感知的車程估算 | ✅ | `scraper/highway_routing.py`＋`travel_time.py`，圖論最短路徑，比純直線距離準；見 data/schema.md |
+| 高速公路感知的車程估算 | ✅ | `common/geo/highway_routing.py`＋`travel_time.py`（從 scraper/ 搬到 common/，backend 也要用），圖論最短路徑，比純直線距離準；見 data/schema.md |
 | 知識庫地圖視覺化 | ✅ | `scraper/draw_map.py` → `docs/assets/okinawa_knowledge_map.png` |
+| 把 travel_time.py 接進行程生成流程 | ✅ | `backend/app/itinerary.py` 生成完行程後，用真實座標覆蓋 `travel_time_from_prev`，不讓 LLM 亂猜距離；已用真實 HTTP API 請求驗證過 |
+| 修正 select_candidates 分類失衡 bug | ✅ | 知識庫擴充到190+筆後，原本的 `[:limit]` 會讓候選清單只剩景點、沒有飯店/餐廳，改成跨分類輪流挑 |
 | 指定並實作 B 級官網爬蟲（OCVB 等） | ⏳ | 目前是人工逐筆查證（WebSearch/WebFetch），還沒做成自動化批次爬蟲 |
 | OSM 匯入資料補核心決策欄位（其餘 140+ 筆） | ⏳ | 165→190 筆裡還有大部分是 `source: "osm"`，MapCode/停車/親子適合度/travel_mode 待補，優先順序見下方 |
 | MapCode 缺漏補齊（心形岩/古宇利塔等 Excel 原有景點） | ⏳ | 目前僅 Excel 有的才有，需人工查詢工具 |
-| 把 travel_time.py 接進行程生成流程 | ⏳ | 目前是獨立分析工具，`backend/app/itinerary.py` 還沒用它算 `travel_time_from_prev` |
 
 ## 資深規劃師缺口評估（2026-07-18 討論）
 

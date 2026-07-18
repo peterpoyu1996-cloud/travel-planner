@@ -11,6 +11,7 @@
 ```
 docs/        需求與架構文件，不放程式碼
 data/        知識庫 JSON 本體 + schema.md，不放程式碼
+common/      backend 跟 scraper 都要用的共用 Python 套件（目前是 common/geo/，距離/路線計算）
 scraper/     離線批次工具（爬蟲、資料標註），不對外提供 API
 backend/     FastAPI 服務，對外的唯一入口
 frontend/    React + Vite + TypeScript

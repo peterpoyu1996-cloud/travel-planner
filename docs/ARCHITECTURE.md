@@ -9,7 +9,7 @@
 | 前端 | React + Vite + TypeScript | 純網頁 SPA，不需要 SSR/API routes（API 由 Python 後端提供），比 Next.js 輕量 |
 | 後端 API | Python + FastAPI | 與爬蟲共用 Python 生態；FastAPI 內建 Pydantic 驗證，符合 PRD 的資料 schema 需求 |
 | 爬蟲 | Python (requests + BeautifulSoup4) | 生態成熟；用 `urllib.robotparser` 檢查 robots.txt |
-| 資料儲存 | 本地 JSON 檔案（`/data`） | 資料量 80–150 筆，不需要資料庫伺服器，免費、易版控、易人工檢視 |
+| 資料儲存 | 本地 JSON 檔案（`/data`） | 資料量 190+ 筆，不需要資料庫伺服器，免費、易版控、易人工檢視 |
 | 檢索方式 | 規則式過濾（非向量 RAG） | 結構化小資料集，用標籤/地區/預算/親子條件直接過濾候選清單，交給 LLM 生成 |
 | LLM | Claude API（Haiku 為主） | 篩選後僅 10–15 候選景點進 prompt，單次生成成本 < $0.01；已設定 Anthropic Console 支出上限 |
 
@@ -23,18 +23,26 @@ travel-planner/
 │   ├── attractions.json
 │   ├── hotels.json
 │   └── restaurants.json
-├── scraper/                 # Python 爬蟲（A/B 級來源）
+├── common/                  # backend 跟 scraper 都要用的共用 Python 套件
+│   └── geo/
+│       ├── geo_utils.py     # haversine 直線距離
+│       ├── highway_routing.py # 高速公路網路圖 + Dijkstra 最短路徑
+│       └── travel_time.py   # 平面道路 vs 高速公路，取較快者估算車程分鐘數
+├── scraper/                 # Python 爬蟲（A/B 級來源）+ 資料處理批次工具
 │   ├── requirements.txt
 │   ├── sources/
 │   │   ├── osm_overpass.py  # A級：OpenStreetMap 開放資料
 │   │   └── official_sites.py# B級：官網爬取，含 robots.txt 檢查
+│   ├── ingest_osm.py        # 把 OSM 原始資料匯入知識庫（含 beach 類別）
+│   ├── build_highway_network.py # 整理高速公路路段+交流道
+│   ├── draw_map.py          # 畫知識庫地圖（docs/assets/okinawa_knowledge_map.png）
 │   └── enrich_llm.py        # 一次性批次跑 LLM 幫忙標註親子適合度等主觀欄位
 ├── backend/                 # FastAPI 服務
 │   ├── requirements.txt
 │   ├── app/
 │   │   ├── main.py
-│   │   ├── filters.py       # 規則式候選景點過濾邏輯
-│   │   └── itinerary.py     # 組 prompt、呼叫 Claude API 生成行程
+│   │   ├── filters.py       # 規則式候選景點過濾邏輯（跨分類平衡＋依資料完整度排序）
+│   │   └── itinerary.py     # 組 prompt、呼叫 LLM 生成行程，再用 common/geo 覆蓋真實車程
 └── frontend/                # React + Vite + TS
     └── (由 `npm create vite` 產生)
 ```
@@ -48,9 +56,12 @@ travel-planner/
         ↓
 [scraper/enrich_llm.py] → 一次性批次呼叫 LLM，補上親子適合度/雨天可用性等主觀標籤，寫回 JSON（快取，不重複呼叫）
         ↓
-[backend/app/filters.py] → 使用者送出條件 → 規則式過濾出候選清單
+[backend/app/filters.py] → 使用者送出條件 → 規則式過濾出候選清單（跨分類平衡，避免某分類資料量大就佔滿整個候選清單）
         ↓
-[backend/app/itinerary.py] → 候選清單 + 使用者條件 → 組 prompt → 透過 LLMProvider 生成 → 回傳逐日行程
+[backend/app/itinerary.py] → 候選清單 + 使用者條件 → 組 prompt → 透過 LLMProvider 生成逐日行程
+        ↓
+[common/geo/travel_time.py] → 用候選資料的真實座標，重新算每天相鄰站點的車程，覆蓋掉 LLM 填的
+        （LLM 負責「排哪些站、為什麼」，車程數字交給算的，不讓模型亂猜距離）
         ↓
 [frontend] → 顯示行程卡片
 ```

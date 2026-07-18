@@ -19,12 +19,14 @@
 - 針對「玩水行程」缺口，OSM 查詢補上 `natural=beach`，新增 25 筆命名海灘到知識庫
 - 新增高速公路感知的車程估算：`scraper/build_highway_network.py`（整理路段+交流道）、`scraper/highway_routing.py`（圖論最短路徑算交流道間實際公路距離）、`scraper/travel_time.py`（比較平面道路 vs 上下高速兩種路線取較快者，高速90km/h／平面45km/h）
 - 新增 `scraper/draw_map.py`：把高速公路、交流道、183筆有座標的知識庫資料畫成地圖，存於 `docs/assets/okinawa_knowledge_map.png`
+- 把 `geo_utils.py`／`highway_routing.py`／`travel_time.py` 從 `scraper/` 搬到新的 `common/geo/` 套件（backend 跟 scraper 都要用，不該只放在 scraper 底下），並把 `travel_time.py` 接進 `backend/app/itinerary.py`：行程生成後，用真實座標＋高速公路網路重新算每天相鄰站點的車程，覆蓋掉 LLM 填的版本，已用真實 HTTP API 請求驗證過
 
 ### Fixed
 - 修正 2 筆 OSM 社群提供的 `name:zh` 標籤形近字誤植（案本食堂→岸本食堂、花苙→花笠食堂）
 - `ingest_osm.py` 的 `to_entry()` 補上對 way/relation（`out center` 查詢回傳座標在 `center` 而非頂層）的座標解析，海灘資料需要這個
 - 補上「美麗海水族館」「泊港漁市場」長期缺失的經緯度（查證自官網），這兩筆之前因為 merge_osm.py 的地理區域檢查正確擋掉了錯誤配對，但一直沒有補上正確座標
 - `travel_time.py` 原本只試離起訖點最近的1個交流道，遇到 OSM 資料裡沒連通的交流道就會整個判斷失敗、誤回報「沒有更快的高速公路路線」，改成試最近的5個組合
+- `filters.select_candidates()` 原本直接 `[:limit]` 截斷，知識庫擴充到190+筆、`attractions.json` 資料量獨大之後，候選清單會整個被景點佔滿、完全排不進飯店/餐廳，改成跨分類輪流挑選（同時依資料完整度排序，excel_seed/官網查證過的資料優先）
 
 ## [0.2.0] - 2026-07-18
 
