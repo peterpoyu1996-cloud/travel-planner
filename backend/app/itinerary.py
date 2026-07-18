@@ -59,8 +59,12 @@ def build_user_prompt(conditions: TripConditions, candidates: list[dict]) -> str
 
 
 def fill_real_travel_times(days: list[DayPlan], candidates: list[dict]) -> None:
-    """把每天同一天內相鄰兩站的 travel_time_from_prev，改成用真實座標＋高速公路網路
+    """把整趟行程相鄰兩站的 travel_time_from_prev，改成用真實座標＋高速公路網路
     算出來的估計值，蓋掉 LLM 填的（or 沒填的）版本。原地修改 days。
+
+    跨天也要算：前一天最後一站（通常是飯店）到隔天第一站，一樣是真實的一段車程，
+    不能因為分屬不同 DayPlan 就跳過不算——把所有天的 stops 攤平成一條連續序列，
+    只有整趟行程最開頭那一站沒有「前一站」。
 
     候選資料裡沒有座標的（大部分 source="osm" 的資料還沒補到 lat/lng）就跳過，
     保留原本的值——沒座標沒辦法算，不能假裝算得出來。
@@ -68,21 +72,21 @@ def fill_real_travel_times(days: list[DayPlan], candidates: list[dict]) -> None:
     by_id = {c["id"]: c for c in candidates}
     graph, interchanges = load_network()
 
-    for day in days:
-        for i in range(1, len(day.stops)):
-            prev_entry = by_id.get(day.stops[i - 1].id)
-            curr_entry = by_id.get(day.stops[i].id)
-            if not prev_entry or not curr_entry:
-                continue
-            if prev_entry.get("lat") is None or curr_entry.get("lat") is None:
-                continue
+    all_stops = [stop for day in days for stop in day.stops]
+    for i in range(1, len(all_stops)):
+        prev_entry = by_id.get(all_stops[i - 1].id)
+        curr_entry = by_id.get(all_stops[i].id)
+        if not prev_entry or not curr_entry:
+            continue
+        if prev_entry.get("lat") is None or curr_entry.get("lat") is None:
+            continue
 
-            result = estimate_minutes(
-                prev_entry["lat"], prev_entry["lng"],
-                curr_entry["lat"], curr_entry["lng"],
-                interchanges, graph,
-            )
-            day.stops[i].travel_time_from_prev = f"約{round(result['minutes'])}分鐘（{result['detail']}）"
+        result = estimate_minutes(
+            prev_entry["lat"], prev_entry["lng"],
+            curr_entry["lat"], curr_entry["lng"],
+            interchanges, graph,
+        )
+        all_stops[i].travel_time_from_prev = f"約{round(result['minutes'])}分鐘（{result['detail']}）"
 
 
 def generate_itinerary(conditions: TripConditions) -> ItineraryResponse:

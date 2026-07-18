@@ -149,7 +149,7 @@
   標籤查到），`estimate_minutes()` 用「試離起訖點最近的5個交流道各種組合」來繞過大部分這種情況，
   但不保證100%找得到路，找不到就會誤判成「這段路沒有更快的高速公路選項」而非真的沒有
 - 速度假設是固定值，沒有考慮車流/紅綠燈/時段
-- 目前是獨立的分析工具，還沒接進 `backend/app/itinerary.py` 的行程生成流程
+- 已接進 `backend/app/itinerary.py`（`fill_real_travel_times()`），行程生成後會用候選資料的真實座標覆蓋 LLM 填的 `travel_time_from_prev`，涵蓋同一天內相鄰站點，也涵蓋跨天（前一晚住宿到隔天第一站）
 
 ## 地圖視覺化（`scraper/draw_map.py`）
 
