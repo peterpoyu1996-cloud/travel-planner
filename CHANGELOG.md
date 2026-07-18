@@ -11,6 +11,13 @@
 
 ## [Unreleased]
 
+### Added
+- 把知識庫 `name` 欄位轉成繁體中文：`scraper/convert_traditional.py`（機械式新字體→繁體字元替換）+ `scraper/translate_names.py`（LLM輔助翻譯，僅翻有把握的知名連鎖店/地標）
+- 用 WebSearch/WebFetch 研究官方網站/部落格，補齊 6 筆熱門景點的 MapCode/停車/營業時間等核心欄位（首里城公園、齋場御嶽、沖繩世界玉泉洞、姬百合和平祈念資料館、殘波岬、真榮田岬）
+
+### Fixed
+- 修正 2 筆 OSM 社群提供的 `name:zh` 標籤形近字誤植（案本食堂→岸本食堂、花苙→花笠食堂）
+
 ## [0.2.0] - 2026-07-18
 
 ### Added
