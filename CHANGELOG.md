@@ -20,6 +20,11 @@
 - 新增高速公路感知的車程估算：`scraper/build_highway_network.py`（整理路段+交流道）、`scraper/highway_routing.py`（圖論最短路徑算交流道間實際公路距離）、`scraper/travel_time.py`（比較平面道路 vs 上下高速兩種路線取較快者，高速90km/h／平面45km/h）
 - 新增 `scraper/draw_map.py`：把高速公路、交流道、183筆有座標的知識庫資料畫成地圖，存於 `docs/assets/okinawa_knowledge_map.png`
 - 把 `geo_utils.py`／`highway_routing.py`／`travel_time.py` 從 `scraper/` 搬到新的 `common/geo/` 套件（backend 跟 scraper 都要用，不該只放在 scraper 底下），並把 `travel_time.py` 接進 `backend/app/itinerary.py`：行程生成後，用真實座標＋高速公路網路重新算每天相鄰站點的車程，覆蓋掉 LLM 填的版本，已用真實 HTTP API 請求驗證過
+- 新增 `AEON MALL沖繩來客夢`（`aeon-mall-okinawa-rycom`）到 `data/attractions.json`：地址/MapCode 查證自官網 `okinawarycom.aeonmall.jp`，座標交叉核對 NAVITIME（官網未提供十進位經緯度）
+- 前端／後端示範情境（`frontend/src/data/demoScenarios.ts`、`backend/app/demo_fixtures.py`）整套換成新範例：兩大一小(6歲)自駕南玩到北再回來、五天四夜，含國際通/海灘飯店/美麗海水族館/購物中心/動物園/燒肉，站間車程用 `common/geo/travel_time.py` 實際算過，取代原本 4 個舊情境按鈕
+- 前端新增第二個對照範例 `chat-raw-comparison`：同一個 prompt 直接丟給 Claude Chat（未使用知識庫、未查證）得到的原始回答逐字轉錄，跟系統產出的範例並排比較用，stop id 一律用 `chat-` 前綴跟真實知識庫 id 區隔
+- 新增 `start-dev.bat`（連同 `backend/run-backend.bat`、`frontend/run-frontend.bat`）：雙擊即可同時啟動後端/前端並自動開瀏覽器，純開發便利腳本
+- 新增 `.github/workflows/deploy-pages.yml`：push 到 main 時自動把前端建置後部署到 GitHub Pages（純靜態、免費）。只有前端，後端沒有一起部署，公開網址上「自訂條件生成」表單會因為呼叫不到 API 而顯示錯誤訊息，「範例情境」（不呼叫 API）功能完全正常；`vite.config.ts` 加上 `base: '/travel-planner/'`（僅限 build，dev server 不受影響）
 
 ### Fixed
 - 修正 2 筆 OSM 社群提供的 `name:zh` 標籤形近字誤植（案本食堂→岸本食堂、花苙→花笠食堂）
@@ -27,6 +32,7 @@
 - 補上「美麗海水族館」「泊港漁市場」長期缺失的經緯度（查證自官網），這兩筆之前因為 merge_osm.py 的地理區域檢查正確擋掉了錯誤配對，但一直沒有補上正確座標
 - `travel_time.py` 原本只試離起訖點最近的1個交流道，遇到 OSM 資料裡沒連通的交流道就會整個判斷失敗、誤回報「沒有更快的高速公路路線」，改成試最近的5個組合
 - `filters.select_candidates()` 原本直接 `[:limit]` 截斷，知識庫擴充到190+筆、`attractions.json` 資料量獨大之後，候選清單會整個被景點佔滿、完全排不進飯店/餐廳，改成跨分類輪流挑選（同時依資料完整度排序，excel_seed/官網查證過的資料優先）
+- `itinerary.fill_real_travel_times()` 原本只算「同一天內」相鄰站點的車程，前一晚住宿到隔天第一站（跨 `DayPlan` 邊界）完全沒算、`travel_time_from_prev` 會是 null，改成把整趟行程攤平成一條連續序列再算，涵蓋跨天銜接
 
 ## [0.2.0] - 2026-07-18
 
