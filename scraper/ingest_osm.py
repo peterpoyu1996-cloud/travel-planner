@@ -37,18 +37,30 @@ CATEGORY_CONFIG = {
         "osm_file": "osm_okinawa_attractions.json",
         "id_prefix": "osm-attr",
         "cap": 60,
+        "stored_category": "attraction",
     },
     "hotel": {
         "seed_file": "hotels.json",
         "osm_file": "osm_okinawa_hotels.json",
         "id_prefix": "osm-hotel",
         "cap": 30,
+        "stored_category": "hotel",
     },
     "restaurant": {
         "seed_file": "restaurants.json",
         "osm_file": "osm_okinawa_restaurants.json",
         "id_prefix": "osm-rest",
         "cap": 60,
+        "stored_category": "restaurant",
+    },
+    # 海灘不是獨立的 schema 分類，併入 attractions.json，category 仍存 "attraction"，
+    # 用 id 前綴 osm-beach 跟 indoor_outdoor="戶外" 區分
+    "beach": {
+        "seed_file": "attractions.json",
+        "osm_file": "osm_okinawa_beaches.json",
+        "id_prefix": "osm-beach",
+        "cap": 25,
+        "stored_category": "attraction",
     },
 }
 
@@ -98,6 +110,10 @@ def to_entry(category: str, el: dict, id_prefix: str) -> dict | None:
     tags = el.get("tags", {})
     lat, lon = el.get("lat"), el.get("lon")
     if lat is None or lon is None:
+        # way/relation 用 "out center;" 查詢時，座標會在 center 裡而不是頂層
+        center = el.get("center") or {}
+        lat, lon = center.get("lat"), center.get("lon")
+    if lat is None or lon is None:
         return None
 
     name_local = tags.get("name")
@@ -112,6 +128,8 @@ def to_entry(category: str, el: dict, id_prefix: str) -> dict | None:
         if hint:
             indoor_outdoor = hint
             break
+    if tags.get("natural") == "beach":
+        indoor_outdoor = "戶外"
 
     return {
         "id": f"{id_prefix}-{el['id']}",
@@ -168,7 +186,7 @@ def ingest_category(category: str) -> None:
 
     candidates = []
     for el in elements:
-        entry = to_entry(category, el, config["id_prefix"])
+        entry = to_entry(config["stored_category"], el, config["id_prefix"])
         if entry is None:
             continue
         if entry["id"] in existing_ids:

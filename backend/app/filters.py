@@ -32,9 +32,12 @@ def matches_conditions(entry: dict, conditions: TripConditions) -> bool:
             return False
 
     if not conditions.has_car and entry.get("travel_mode") == "開車":
-        # 沒租車就排除「需要開車」的景點——注意 has_parking 跟這件事無關
-        # （有沒有停車場不代表沒車去得了），之前誤把兩者混在一起判斷過
-        return False
+        # 沒租車就排除「需要開車」的景點——但如果這筆資料離單軌電車站走路範圍內
+        # （nearest_monorail_station 有值，見 scraper/tag_transit_access.py），
+        # 就算 travel_mode 標記開車（反映的是原始資料來源當初怎麼去的），
+        # 沒車的人還是有機會走路/單軌到，不用排除
+        if not entry.get("nearest_monorail_station"):
+            return False
 
     return True
 

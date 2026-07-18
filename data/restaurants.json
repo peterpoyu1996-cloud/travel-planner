@@ -32,7 +32,9 @@
     "source": "excel_seed",
     "source_note": "涮涮鍋 5800日圓/兩人份，需先預訂 | OSM比對: 大家",
     "sub_area": null,
-    "translated_name": "百年古家 大家 阿古豬"
+    "translated_name": "百年古家 大家 阿古豬",
+    "monorail_distance_km": 47.6,
+    "nearest_monorail_station": null
   },
   {
     "id": "hamanoya",
@@ -67,7 +69,9 @@
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day4 中午",
     "sub_area": null,
-    "translated_name": "濱の家"
+    "translated_name": "濱の家",
+    "nearest_monorail_station": null,
+    "monorail_distance_km": null
   },
   {
     "id": "ryukyu-no-ushi-chatan",
@@ -102,7 +106,9 @@
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day6 晚上 | OSM比對: 琉球の牛",
     "sub_area": "美國村",
-    "translated_name": "琉球之牛 北谷店"
+    "translated_name": "琉球之牛 北谷店",
+    "monorail_distance_km": 24.21,
+    "nearest_monorail_station": null
   },
   {
     "id": "yakiniku-motobu-bokujo",
@@ -137,7 +143,9 @@
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day7 晚上 | OSM比對: もとぶ牧場",
     "sub_area": null,
-    "translated_name": "燒肉本部牧場"
+    "translated_name": "燒肉本部牧場",
+    "monorail_distance_km": 48.42,
+    "nearest_monorail_station": null
   },
   {
     "id": "bakumo-ramen",
@@ -172,7 +180,9 @@
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day7 晚上，瀨長島溫泉飯店旁",
     "sub_area": "瀨長島",
-    "translated_name": "暖暮拉麵"
+    "translated_name": "暖暮拉麵",
+    "nearest_monorail_station": null,
+    "monorail_distance_km": null
   },
   {
     "id": "osm-rest-1558481078",
@@ -207,7 +217,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 1558481078），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
-    "translated_name": "CoCo壹番屋"
+    "translated_name": "CoCo壹番屋",
+    "monorail_distance_km": 0.27,
+    "nearest_monorail_station": "小禄"
   },
   {
     "id": "osm-rest-1995215709",
@@ -242,7 +254,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 1995215709），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "鶴小"
+    "translated_name": "鶴小",
+    "monorail_distance_km": 7.48,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-1995215764",
@@ -276,8 +290,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1995215764），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "海濱得來速餐廳"
+    "source_note": "OSM匯入（node 1995215764），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "海濱得來速餐廳",
+    "monorail_distance_km": 23.15,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-4402466094",
@@ -311,8 +327,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4402466094），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "隨時吃早餐 本店"
+    "source_note": "OSM匯入（node 4402466094），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "隨時吃早餐 本店",
+    "monorail_distance_km": 0.3,
+    "nearest_monorail_station": "県庁前"
   },
   {
     "id": "osm-rest-4489395093",
@@ -347,7 +365,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 4489395093），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
-    "translated_name": "燒肉本舗 島牛"
+    "translated_name": "燒肉本舗 島牛",
+    "monorail_distance_km": 0.25,
+    "nearest_monorail_station": "美栄橋"
   },
   {
     "id": "osm-rest-5413612723",
@@ -381,8 +401,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5413612723），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Noricce"
+    "source_note": "OSM匯入（node 5413612723），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Noricce",
+    "monorail_distance_km": 19.9,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-5884951586",
@@ -417,7 +439,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 5884951586），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "A&W"
+    "translated_name": "A&W",
+    "monorail_distance_km": 14.44,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-6187521385",
@@ -452,7 +476,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 6187521385），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "一番餃子屋"
+    "translated_name": "一番餃子屋",
+    "monorail_distance_km": 0.13,
+    "nearest_monorail_station": "安里"
   },
   {
     "id": "osm-rest-6432514592",
@@ -487,7 +513,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 6432514592），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "南谷茶房"
+    "translated_name": "南谷茶房",
+    "monorail_distance_km": 0.11,
+    "nearest_monorail_station": "首里"
   },
   {
     "id": "osm-rest-6845961585",
@@ -522,7 +550,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 6845961585），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "HANAHOU"
+    "translated_name": "HANAHOU",
+    "monorail_distance_km": 19.84,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-10573155101",
@@ -556,8 +586,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 10573155101），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "中華料理 喜悅家"
+    "source_note": "OSM匯入（node 10573155101），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "中華料理 喜悅家",
+    "monorail_distance_km": 2.94,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-11214895437",
@@ -592,7 +624,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 11214895437），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
-    "translated_name": "串炸田中"
+    "translated_name": "串炸田中",
+    "monorail_distance_km": 1.58,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-11390871235",
@@ -626,8 +660,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11390871235），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "支那蕎麥麵 嘉手苅"
+    "source_note": "OSM匯入（node 11390871235），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "支那蕎麥麵 嘉手苅",
+    "monorail_distance_km": 2.17,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-11679566896",
@@ -662,7 +698,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 11679566896），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "hali hali"
+    "translated_name": "hali hali",
+    "monorail_distance_km": 7.48,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-11679566966",
@@ -696,8 +734,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11679566966），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Mike's Hanbi店"
+    "source_note": "OSM匯入（node 11679566966），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Mike's Hanbi店",
+    "monorail_distance_km": 7.62,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-11801994051",
@@ -732,7 +772,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 11801994051），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "Indira"
+    "translated_name": "Indira",
+    "monorail_distance_km": 6.59,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-11936431766",
@@ -766,8 +808,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11936431766），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "古民家食堂 Tiirabui"
+    "source_note": "OSM匯入（node 11936431766），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "古民家食堂 Tiirabui",
+    "monorail_distance_km": 23.04,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-12047299432",
@@ -802,7 +846,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 12047299432），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "膳"
+    "translated_name": "膳",
+    "monorail_distance_km": 19.52,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-12069082796",
@@ -836,8 +882,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12069082796），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "石窯披薩酒場 Maruki"
+    "source_note": "OSM匯入（node 12069082796），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "石窯披薩酒場 Maruki",
+    "monorail_distance_km": 19.96,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-12202937521",
@@ -871,8 +919,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12202937521），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "YOMITAN魔女咖哩 惠庵"
+    "source_note": "OSM匯入（node 12202937521），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "YOMITAN魔女咖哩 惠庵",
+    "monorail_distance_km": 19.37,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-12681372539",
@@ -907,7 +957,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 12681372539），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "Soup Soup"
+    "translated_name": "Soup Soup",
+    "monorail_distance_km": 0.38,
+    "nearest_monorail_station": "おもろまち"
   },
   {
     "id": "osm-rest-12715681091",
@@ -941,8 +993,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12715681091），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "彩虹咖啡 Nijiiro Cafe"
+    "source_note": "OSM匯入（node 12715681091），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "彩虹咖啡 Nijiiro Cafe",
+    "monorail_distance_km": 0.99,
+    "nearest_monorail_station": "県庁前"
   },
   {
     "id": "osm-rest-12872439918",
@@ -976,8 +1030,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12872439918），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "拉麵暖暮 北谷砂邊店"
+    "source_note": "OSM匯入（node 12872439918），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "拉麵暖暮 北谷砂邊店",
+    "monorail_distance_km": 9.73,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-12876542801",
@@ -1012,7 +1068,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 12876542801），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
-    "translated_name": "Jolly Pasta 名護店"
+    "translated_name": "Jolly Pasta 名護店",
+    "monorail_distance_km": 46.43,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-12903832035",
@@ -1046,8 +1104,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12903832035），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "座喜味蕎麥麵"
+    "source_note": "OSM匯入（node 12903832035），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "座喜味蕎麥麵",
+    "monorail_distance_km": 17.36,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-13021137193",
@@ -1082,7 +1142,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 13021137193），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
-    "translated_name": "金澤まいもん壽司"
+    "translated_name": "金澤まいもん壽司",
+    "monorail_distance_km": 0.18,
+    "nearest_monorail_station": "県庁前"
   },
   {
     "id": "osm-rest-13022143808",
@@ -1116,8 +1178,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13022143808），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Airando Fiji Cafe（斐濟島咖啡）"
+    "source_note": "OSM匯入（node 13022143808），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Airando Fiji Cafe（斐濟島咖啡）",
+    "monorail_distance_km": 57.78,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-13030858746",
@@ -1152,7 +1216,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 13030858746），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "Morning Works"
+    "translated_name": "Morning Works",
+    "monorail_distance_km": 13.04,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-13038567300",
@@ -1187,7 +1253,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 13038567300），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "SUNNY TACOS"
+    "translated_name": "SUNNY TACOS",
+    "monorail_distance_km": 46.66,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-13383724905",
@@ -1222,7 +1290,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 13383724905），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "105 DELI&肉酒場"
+    "translated_name": "105 DELI&肉酒場",
+    "monorail_distance_km": 5.51,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-13390966851",
@@ -1256,8 +1326,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13390966851），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "拉麵札幌屋"
+    "source_note": "OSM匯入（node 13390966851），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "拉麵札幌屋",
+    "monorail_distance_km": 5.24,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-13619614506",
@@ -1292,7 +1364,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 13619614506），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "Royal Myanmar"
+    "translated_name": "Royal Myanmar",
+    "monorail_distance_km": 0.15,
+    "nearest_monorail_station": "安里"
   },
   {
     "id": "osm-rest-13700547516",
@@ -1326,8 +1400,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13700547516），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "金月蕎麥麵讀谷本店"
+    "source_note": "OSM匯入（node 13700547516），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "金月蕎麥麵讀谷本店",
+    "monorail_distance_km": 17.29,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-13716549922",
@@ -1362,7 +1438,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 13716549922），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
-    "translated_name": "Royal Host"
+    "translated_name": "Royal Host",
+    "monorail_distance_km": 0.19,
+    "nearest_monorail_station": "県庁前"
   },
   {
     "id": "osm-rest-13730263900",
@@ -1396,8 +1474,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 13730263900），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "燒肉食堂 Kouya"
+    "source_note": "OSM匯入（node 13730263900），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "燒肉食堂 Kouya",
+    "monorail_distance_km": 4.4,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-13887673122",
@@ -1432,7 +1512,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 13887673122），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "花蓮"
+    "translated_name": "花蓮",
+    "monorail_distance_km": 5.69,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-13908541401",
@@ -1467,7 +1549,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 13908541401），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "悠愉樹庵"
+    "translated_name": "悠愉樹庵",
+    "monorail_distance_km": 6.01,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-13965228200",
@@ -1502,7 +1586,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 13965228200），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "琉球HEAT"
+    "translated_name": "琉球HEAT",
+    "monorail_distance_km": 3.3,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-1560638499",
@@ -1537,7 +1623,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 1560638499），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "Han's"
+    "translated_name": "Han's",
+    "monorail_distance_km": 0.33,
+    "nearest_monorail_station": "美栄橋"
   },
   {
     "id": "osm-rest-1584590713",
@@ -1572,7 +1660,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 1584590713），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "牛角"
+    "translated_name": "牛角",
+    "monorail_distance_km": 0.27,
+    "nearest_monorail_station": "おもろまち"
   },
   {
     "id": "osm-rest-1864039027",
@@ -1607,7 +1697,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 1864039027），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "cafe 帆風"
+    "translated_name": "cafe 帆風",
+    "monorail_distance_km": 56.18,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-1995215717",
@@ -1642,7 +1734,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 1995215717），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
-    "translated_name": "想作和食 花淺葱"
+    "translated_name": "想作和食 花淺葱",
+    "monorail_distance_km": 18.06,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-1995215734",
@@ -1676,8 +1770,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1995215734），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "名護曲餐廳"
+    "source_note": "OSM匯入（node 1995215734），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "名護曲餐廳",
+    "monorail_distance_km": 44.03,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-1995215744",
@@ -1712,7 +1808,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 1995215744），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
-    "translated_name": "曙光便當"
+    "translated_name": "曙光便當",
+    "monorail_distance_km": 17.28,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-1995215756",
@@ -1747,7 +1845,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 1995215756），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "泰期"
+    "translated_name": "泰期",
+    "monorail_distance_km": 18.2,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-1995215757",
@@ -1781,8 +1881,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1995215757），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Mosugu蕎麥麵 Kunnadu"
+    "source_note": "OSM匯入（node 1995215757），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Mosugu蕎麥麵 Kunnadu",
+    "monorail_distance_km": 10.61,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-1995215770",
@@ -1817,7 +1919,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 1995215770），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
-    "translated_name": "中本天婦羅店"
+    "translated_name": "中本天婦羅店",
+    "monorail_distance_km": 10.79,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-2167148517",
@@ -1852,7 +1956,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 2167148517），travel_mode/停車/親子適合度等待補充｜name欄位為新字體機械轉繁體，非翻譯",
-    "translated_name": "燒肉乃我那霸"
+    "translated_name": "燒肉乃我那霸",
+    "monorail_distance_km": 46.66,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-2883289307",
@@ -1887,7 +1993,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 2883289307），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
-    "translated_name": "天空食堂"
+    "translated_name": "天空食堂",
+    "monorail_distance_km": 0.14,
+    "nearest_monorail_station": "県庁前"
   },
   {
     "id": "osm-rest-3792759951",
@@ -1921,8 +2029,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 3792759951），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Suumanumee"
+    "source_note": "OSM匯入（node 3792759951），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Suumanumee",
+    "monorail_distance_km": 2.39,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-4330706892",
@@ -1956,8 +2066,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4330706892），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Ohacorte"
+    "source_note": "OSM匯入（node 4330706892），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Ohacorte",
+    "monorail_distance_km": 2.67,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-4330710290",
@@ -1992,7 +2104,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 4330710290），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "C&C Breakfast"
+    "translated_name": "C&C Breakfast",
+    "monorail_distance_km": 0.52,
+    "nearest_monorail_station": "牧志"
   },
   {
     "id": "osm-rest-4330713892",
@@ -2027,7 +2141,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 4330713892），travel_mode/停車/親子適合度等待補充｜OSM社群提供的name:zh標籤疑似有誤植（字形相近字誤打），已人工訂正",
-    "translated_name": "岸本食堂"
+    "translated_name": "岸本食堂",
+    "monorail_distance_km": 49.0,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-4330721291",
@@ -2062,7 +2178,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 4330721291），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "88牛排"
+    "translated_name": "88牛排",
+    "monorail_distance_km": 0.76,
+    "nearest_monorail_station": "旭橋"
   },
   {
     "id": "osm-rest-4360209689",
@@ -2097,7 +2215,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 4360209689），travel_mode/停車/親子適合度等待補充｜OSM社群提供的name:zh標籤疑似有誤植（字形相近字誤打），已人工訂正",
-    "translated_name": "花笠食堂"
+    "translated_name": "花笠食堂",
+    "monorail_distance_km": 0.44,
+    "nearest_monorail_station": "牧志"
   },
   {
     "id": "osm-rest-4751048522",
@@ -2131,8 +2251,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4751048522），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "On the Beach咖啡"
+    "source_note": "OSM匯入（node 4751048522），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "On the Beach咖啡",
+    "monorail_distance_km": 54.28,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-4780279222",
@@ -2167,7 +2289,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 4780279222），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
-    "translated_name": "山之茶屋・樂水"
+    "translated_name": "山之茶屋・樂水",
+    "monorail_distance_km": 11.0,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-4846870521",
@@ -2201,8 +2325,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4846870521），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "麵家Nirai"
+    "source_note": "OSM匯入（node 4846870521），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "麵家Nirai",
+    "monorail_distance_km": 5.41,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-4931770144",
@@ -2237,7 +2363,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 4931770144），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "Butcher Grill & Bar"
+    "translated_name": "Butcher Grill & Bar",
+    "monorail_distance_km": 12.28,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-rest-5157158921",
@@ -2271,7 +2399,9 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5157158921），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "沖繩茶屋 Bukubuku"
+    "source_note": "OSM匯入（node 5157158921），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "沖繩茶屋 Bukubuku",
+    "monorail_distance_km": 0.5,
+    "nearest_monorail_station": "牧志"
   }
 ]

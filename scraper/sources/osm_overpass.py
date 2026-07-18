@@ -44,6 +44,21 @@ QUERY_TEMPLATES = {
         );
         out body;
     """,
+    "beaches": """
+        [out:json][timeout:60];
+        (
+          node["natural"="beach"]({bbox});
+          way["natural"="beach"]({bbox});
+        );
+        out center;
+    """,
+    "transit_stations": """
+        [out:json][timeout:60];
+        (
+          node["railway"="station"]({bbox});
+        );
+        out body;
+    """,
 }
 
 

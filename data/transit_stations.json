@@ -1,0 +1,173 @@
+[
+  {
+    "id": "monorail-6540630177",
+    "name": "赤嶺",
+    "name_en": "Akamine",
+    "lat": 26.1932392,
+    "lng": 127.6604863,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-6540630176",
+    "name": "小禄",
+    "name_en": "Oroku",
+    "lat": 26.1965305,
+    "lng": 127.6670333,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-7746899672",
+    "name": "奥武山公園",
+    "name_en": "Onoyama Park",
+    "lat": 26.2007505,
+    "lng": 127.6753296,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-6540547644",
+    "name": "壺川",
+    "name_en": "Tsubogawa",
+    "lat": 26.2057971,
+    "lng": 127.678392,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-6540630178",
+    "name": "那覇空港",
+    "name_en": "Naha Airport",
+    "lat": 26.2064858,
+    "lng": 127.6522133,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-6540547645",
+    "name": "旭橋",
+    "name_en": "Asahibashi",
+    "lat": 26.2118503,
+    "lng": 127.675463,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-6540547646",
+    "name": "県庁前",
+    "name_en": "Prefectural Office",
+    "lat": 26.2143841,
+    "lng": 127.6793341,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-6540583667",
+    "name": "安里",
+    "name_en": "Asato",
+    "lat": 26.2168041,
+    "lng": 127.6957599,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-6540547650",
+    "name": "牧志",
+    "name_en": "Makishi",
+    "lat": 26.2171925,
+    "lng": 127.6925906,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-6540583676",
+    "name": "首里",
+    "name_en": "Shuri",
+    "lat": 26.2191726,
+    "lng": 127.7255525,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-6540547649",
+    "name": "美栄橋",
+    "name_en": "Miebashi",
+    "lat": 26.219218,
+    "lng": 127.6843885,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-6540583670",
+    "name": "おもろまち",
+    "name_en": "Omoromachi",
+    "lat": 26.2227746,
+    "lng": 127.6984101,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-6540583675",
+    "name": "儀保",
+    "name_en": "Gibo",
+    "lat": 26.2245946,
+    "lng": 127.7190848,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-6842842194",
+    "name": "石嶺",
+    "name_en": "Ishimine",
+    "lat": 26.2270073,
+    "lng": 127.7290119,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-10915647317",
+    "name": "市立病院前",
+    "name_en": "Naha City Hospital",
+    "lat": 26.2275267,
+    "lng": 127.7100529,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-6540583673",
+    "name": "古島",
+    "name_en": "Furujima",
+    "lat": 26.2308633,
+    "lng": 127.7030539,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-6844601159",
+    "name": "経塚",
+    "name_en": "Kyozuka",
+    "lat": 26.2367191,
+    "lng": 127.7285226,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-6901207713",
+    "name": "てだこ浦西",
+    "name_en": "Tedako-Uranishi",
+    "lat": 26.2417482,
+    "lng": 127.7419169,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  },
+  {
+    "id": "monorail-6844601160",
+    "name": "浦添前田",
+    "name_en": "Urasoe-Maeda",
+    "lat": 26.2438455,
+    "lng": 127.7322674,
+    "line": "沖縄都市モノレール（ゆいレール）",
+    "source": "osm"
+  }
+]

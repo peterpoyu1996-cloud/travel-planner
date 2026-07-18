@@ -32,7 +32,9 @@
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day2 CHECK IN",
     "sub_area": null,
-    "translated_name": "美麗海村公寓"
+    "translated_name": "美麗海村公寓",
+    "nearest_monorail_station": null,
+    "monorail_distance_km": null
   },
   {
     "id": "naha-nikko-city-hotel",
@@ -67,7 +69,9 @@
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day6 CHECK IN",
     "sub_area": null,
-    "translated_name": "那霸日航都市飯店"
+    "translated_name": "那霸日航都市飯店",
+    "nearest_monorail_station": null,
+    "monorail_distance_km": null
   },
   {
     "id": "senaga-island-hotel",
@@ -102,7 +106,9 @@
     "source": "excel_seed",
     "source_note": "2024/1/7-1/11 沖繩行程 Day7 CHECK IN",
     "sub_area": "瀨長島",
-    "translated_name": "琉球溫泉 瀨長島飯店"
+    "translated_name": "琉球溫泉 瀨長島飯店",
+    "nearest_monorail_station": null,
+    "monorail_distance_km": null
   },
   {
     "id": "osm-hotel-1583677053",
@@ -137,7 +143,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 1583677053），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
-    "translated_name": "東橫INN那霸新都心Omoromachi"
+    "translated_name": "東橫INN那霸新都心Omoromachi",
+    "monorail_distance_km": 0.54,
+    "nearest_monorail_station": "おもろまち"
   },
   {
     "id": "osm-hotel-1583677055",
@@ -171,8 +179,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 1583677055），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Almont飯店"
+    "source_note": "OSM匯入（node 1583677055），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Almont飯店",
+    "monorail_distance_km": 0.32,
+    "nearest_monorail_station": "おもろまち"
   },
   {
     "id": "osm-hotel-2676267351",
@@ -207,7 +217,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 2676267351），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
-    "translated_name": "蒙特雷飯店沖繩 溫泉度假村"
+    "translated_name": "蒙特雷飯店沖繩 溫泉度假村",
+    "monorail_distance_km": 24.41,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-4673553180",
@@ -241,8 +253,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4673553180），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "北方Yuimaru本館"
+    "source_note": "OSM匯入（node 4673553180），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "北方Yuimaru本館",
+    "monorail_distance_km": 54.65,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-4742180621",
@@ -276,8 +290,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 4742180621），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "413濱比嘉 Hotel & Cafe"
+    "source_note": "OSM匯入（node 4742180621），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "413濱比嘉 Hotel & Cafe",
+    "monorail_distance_km": 22.72,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-5010880558",
@@ -312,7 +328,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 5010880558），travel_mode/停車/親子適合度等待補充｜name欄位為LLM輔助翻譯，非官方譯名，如不準確請協助修正",
-    "translated_name": "Smile飯店那霸城市度假村"
+    "translated_name": "Smile飯店那霸城市度假村",
+    "monorail_distance_km": 0.63,
+    "nearest_monorail_station": "県庁前"
   },
   {
     "id": "osm-hotel-5885046890",
@@ -346,8 +364,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 5885046890），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Star House小屋"
+    "source_note": "OSM匯入（node 5885046890），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Star House小屋",
+    "monorail_distance_km": 53.36,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-6522173518",
@@ -381,8 +401,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 6522173518），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Y's CABIN&HOTEL 那霸國際通"
+    "source_note": "OSM匯入（node 6522173518），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Y's CABIN&HOTEL 那霸國際通",
+    "monorail_distance_km": 0.22,
+    "nearest_monorail_station": "県庁前"
   },
   {
     "id": "osm-hotel-7244186054",
@@ -416,8 +438,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 7244186054），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Kaeru-ya 純住宿民宿"
+    "source_note": "OSM匯入（node 7244186054），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Kaeru-ya 純住宿民宿",
+    "monorail_distance_km": 54.5,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-7244193426",
@@ -451,8 +475,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 7244193426），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Fuuran 古民家民宿"
+    "source_note": "OSM匯入（node 7244193426），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Fuuran 古民家民宿",
+    "monorail_distance_km": 54.43,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-7923784018",
@@ -487,7 +513,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 7923784018），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "Hilton Okinawa Sesoko Resort"
+    "translated_name": "Hilton Okinawa Sesoko Resort",
+    "monorail_distance_km": 46.82,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-10820048597",
@@ -522,7 +550,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 10820048597），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "HOTEL Ala COOJU Okinawa"
+    "translated_name": "HOTEL Ala COOJU Okinawa",
+    "monorail_distance_km": 3.41,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-11109431705",
@@ -556,8 +586,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11109431705），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Cocktail Stay那霸飯店"
+    "source_note": "OSM匯入（node 11109431705），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Cocktail Stay那霸飯店",
+    "monorail_distance_km": 0.67,
+    "nearest_monorail_station": "県庁前"
   },
   {
     "id": "osm-hotel-11680864382",
@@ -592,7 +624,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 11680864382），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "BiBi Hotel FUTENMA"
+    "translated_name": "BiBi Hotel FUTENMA",
+    "monorail_distance_km": 6.36,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-11847179923",
@@ -626,8 +660,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11847179923），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "神谷莊（歐吉桑留下的民宿）"
+    "source_note": "OSM匯入（node 11847179923），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "神谷莊（歐吉桑留下的民宿）",
+    "monorail_distance_km": 19.65,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-11936431830",
@@ -661,8 +697,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11936431830），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "LAC宇流麻（HAMACHŪ內）"
+    "source_note": "OSM匯入（node 11936431830），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "LAC宇流麻（HAMACHŪ內）",
+    "monorail_distance_km": 23.01,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-11936431929",
@@ -696,8 +734,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11936431929），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Tripshot Villas・濱比嘉"
+    "source_note": "OSM匯入（node 11936431929），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Tripshot Villas・濱比嘉",
+    "monorail_distance_km": 23.87,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-11936431959",
@@ -731,8 +771,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 11936431959），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "The Stella・濱比嘉"
+    "source_note": "OSM匯入（node 11936431959），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "The Stella・濱比嘉",
+    "monorail_distance_km": 23.97,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-11936431978",
@@ -767,7 +809,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 11936431978），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "totono house 吉本家"
+    "translated_name": "totono house 吉本家",
+    "monorail_distance_km": 24.07,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-11936432037",
@@ -802,7 +846,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 11936432037），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "古民家 あさひ"
+    "translated_name": "古民家 あさひ",
+    "monorail_distance_km": 24.05,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-12008683880",
@@ -836,8 +882,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12008683880），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "歌聲民宿Māminā"
+    "source_note": "OSM匯入（node 12008683880），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "歌聲民宿Māminā",
+    "monorail_distance_km": 20.67,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-12008911491",
@@ -871,8 +919,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12008911491），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Ernesto殘波"
+    "source_note": "OSM匯入（node 12008911491），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Ernesto殘波",
+    "monorail_distance_km": 20.5,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-12047299673",
@@ -906,8 +956,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12047299673），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Grand Style沖繩 讀谷飯店&度假村"
+    "source_note": "OSM匯入（node 12047299673），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Grand Style沖繩 讀谷飯店&度假村",
+    "monorail_distance_km": 19.41,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-12056711144",
@@ -941,8 +993,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12056711144），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "讀谷公寓飯店ND"
+    "source_note": "OSM匯入（node 12056711144），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "讀谷公寓飯店ND",
+    "monorail_distance_km": 19.02,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-12060293526",
@@ -976,8 +1030,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12060293526），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Blue Steak Wonder 瀨名波 沖繩讀谷"
+    "source_note": "OSM匯入（node 12060293526），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Blue Steak Wonder 瀨名波 沖繩讀谷",
+    "monorail_distance_km": 19.97,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-12071200750",
@@ -1011,8 +1067,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12071200750），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "沖繩讀谷 設計師公寓飯店"
+    "source_note": "OSM匯入（node 12071200750），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "沖繩讀谷 設計師公寓飯店",
+    "monorail_distance_km": 19.97,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-12111616076",
@@ -1047,7 +1105,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 12111616076），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "BLUE STEAK WONDER NAGAHAMA"
+    "translated_name": "BLUE STEAK WONDER NAGAHAMA",
+    "monorail_distance_km": 19.68,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-12181223789",
@@ -1081,8 +1141,10 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12181223789），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Coral Garden Seven Pools"
+    "source_note": "OSM匯入（node 12181223789），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Coral Garden Seven Pools",
+    "monorail_distance_km": 19.5,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-12210491788",
@@ -1117,7 +1179,9 @@
     "description_for_embedding": null,
     "source": "osm",
     "source_note": "OSM匯入（node 12210491788），travel_mode/停車/親子適合度等待補充",
-    "translated_name": "Condominium T-Room"
+    "translated_name": "Condominium T-Room",
+    "monorail_distance_km": 19.27,
+    "nearest_monorail_station": null
   },
   {
     "id": "osm-hotel-12243159695",
@@ -1151,7 +1215,9 @@
     "budget_level": null,
     "description_for_embedding": null,
     "source": "osm",
-    "source_note": "OSM匯入（node 12243159695），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
-    "translated_name": "Avian海濱小屋"
+    "source_note": "OSM匯入（node 12243159695），travel_mode/停車/親子適合度等待補充｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名｜translated_name為LLM輔助翻譯（含沖繩方言音譯），非官方譯名",
+    "translated_name": "Avian海濱小屋",
+    "monorail_distance_km": 47.57,
+    "nearest_monorail_station": null
   }
 ]
