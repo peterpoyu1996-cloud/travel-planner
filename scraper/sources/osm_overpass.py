@@ -59,6 +59,22 @@ QUERY_TEMPLATES = {
         );
         out body;
     """,
+    "highway_geometry": """
+        [out:json][timeout:90];
+        (
+          way["highway"="motorway"]["ref"~"E58"]({bbox});
+          way["highway"="motorway"]["name"~"沖縄自動車道"]({bbox});
+          way["highway"="motorway_link"]({bbox});
+        );
+        out geom;
+    """,
+    "highway_junctions": """
+        [out:json][timeout:60];
+        (
+          node["highway"="motorway_junction"]({bbox});
+        );
+        out body;
+    """,
 }
 
 

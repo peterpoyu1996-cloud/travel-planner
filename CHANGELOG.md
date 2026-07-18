@@ -17,10 +17,14 @@
 - 新增 `translated_name` 欄位，保證 UI 顯示一定是中文，跟謹慎保守的 `name` 欄位分開（`scraper/add_translated_name.py`）
 - 針對「不開車行程」缺口新增地基：`scraper/geo_utils.py`（haversine 距離）、`data/transit_stations.json`（單軌電車19站）、`scraper/tag_transit_access.py`（標註每筆資料離最近單軌站多遠），並更新 `filters.py` 讓單軌步行範圍內的景點在 `has_car=false` 時不會被誤排除
 - 針對「玩水行程」缺口，OSM 查詢補上 `natural=beach`，新增 25 筆命名海灘到知識庫
+- 新增高速公路感知的車程估算：`scraper/build_highway_network.py`（整理路段+交流道）、`scraper/highway_routing.py`（圖論最短路徑算交流道間實際公路距離）、`scraper/travel_time.py`（比較平面道路 vs 上下高速兩種路線取較快者，高速90km/h／平面45km/h）
+- 新增 `scraper/draw_map.py`：把高速公路、交流道、183筆有座標的知識庫資料畫成地圖，存於 `docs/assets/okinawa_knowledge_map.png`
 
 ### Fixed
 - 修正 2 筆 OSM 社群提供的 `name:zh` 標籤形近字誤植（案本食堂→岸本食堂、花苙→花笠食堂）
 - `ingest_osm.py` 的 `to_entry()` 補上對 way/relation（`out center` 查詢回傳座標在 `center` 而非頂層）的座標解析，海灘資料需要這個
+- 補上「美麗海水族館」「泊港漁市場」長期缺失的經緯度（查證自官網），這兩筆之前因為 merge_osm.py 的地理區域檢查正確擋掉了錯誤配對，但一直沒有補上正確座標
+- `travel_time.py` 原本只試離起訖點最近的1個交流道，遇到 OSM 資料裡沒連通的交流道就會整個判斷失敗、誤回報「沒有更快的高速公路路線」，改成試最近的5個組合
 
 ## [0.2.0] - 2026-07-18
 

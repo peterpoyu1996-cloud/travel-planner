@@ -126,3 +126,33 @@
 匯入 25 筆命名海灘到 `attractions.json`（id 前綴 `osm-beach-`）。這些海灘目前只有名稱/座標/地區，
 **沒有「適合小孩/有救生員/有淋浴設施」這類決策資訊**，那部分還是得靠人工查證官網/部落格，
 沒有捷徑，見 docs/ROADMAP.md。
+
+## 高速公路感知的車程估算（`scraper/highway_routing.py`、`scraper/travel_time.py`）
+
+原本的 `travel_time_from_prev` 只有 Excel 種子資料當初實際那次的紀錄，`monorail_distance_km`
+也只是單點到單點的直線距離，都沒辦法回答「這兩點之間開車大概多久、會不會經過高速公路」。
+新增三支腳本組成一條處理鏈：
+
+1. **抓資料**：`scraper/sources/osm_overpass.py` 新增 `highway_geometry`（沖縄自動車道等
+   motorway/motorway_link 路段幾何）、`highway_junctions`（交流道節點）兩個查詢類別
+2. **`scraper/build_highway_network.py`**：整理成 `data/highway_network.json`——路段幾何
+   （畫圖用）＋ 27 個交流道（同名節點，例如同一個交流道的進/出匝道，合併成一個代表點）
+3. **`scraper/highway_routing.py`**：把路段幾何拆成圖（節點=座標、邊=相鄰點的haversine距離），
+   用 Dijkstra 算任兩個交流道之間「沿著公路網實際開多遠」，不是交流道座標直接算直線距離
+   （沖縄自動車道有彎、有分支，直線距離會低估）
+4. **`scraper/travel_time.py`**：`estimate_minutes()` 比較「直接走平面道路」跟「開到最近交流道
+   上高速、開到最近交流道下高速、再開到目的地」兩種算法，取比較快的，回傳用了哪條路線。
+   速度假設：高速公路 90km/h、平面道路 45km/h（含1.3倍繞路係數修正haversine低估）
+
+**已知限制**：
+- 交流道之間偶爾在 OSM 資料裡沒連通（例如支線道路的連接路段沒被 `motorway`/`motorway_link`
+  標籤查到），`estimate_minutes()` 用「試離起訖點最近的5個交流道各種組合」來繞過大部分這種情況，
+  但不保證100%找得到路，找不到就會誤判成「這段路沒有更快的高速公路選項」而非真的沒有
+- 速度假設是固定值，沒有考慮車流/紅綠燈/時段
+- 目前是獨立的分析工具，還沒接進 `backend/app/itinerary.py` 的行程生成流程
+
+## 地圖視覺化（`scraper/draw_map.py`）
+
+把知識庫全部有座標的資料（183筆）＋高速公路＋交流道畫成一張圖，存在
+`docs/assets/okinawa_knowledge_map.png`。純視覺化/人工檢查資料品質用，跑
+`python scraper/draw_map.py` 就會重新產生（改了知識庫資料後圖不會自動更新，要手動重跑）。
