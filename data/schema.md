@@ -26,6 +26,8 @@
   "travel_mode": "開車 | 步行 | 大眾運輸 | null",
   "mapcode": "string | null，日本車用導航 MapCode",
   "suggested_stay_duration": "string | null",
+  "nearest_monorail_station": "string | null，`scraper/tag_transit_access.py` 算出的最近單軌電車站，在步行範圍內才有值，否則 null",
+  "monorail_distance_km": "number | null，到最近單軌站的直線距離（haversine，不是實際步行路徑）",
 
   // C. 停車
   "has_parking": "boolean",
@@ -101,3 +103,26 @@
 是音譯兼意譯，**不保證跟當地慣用譯名一致**，信心程度比「name 已經是中文」那 91 筆低。
 要判斷一筆資料的翻譯可不可靠，比較 `name` 是否等於 `name_local` 就知道：
 不相等 = 這筆 `translated_name` 是新翻的、信心較低。
+
+## 不開車行程的地基（`scraper/geo_utils.py`、`data/transit_stations.json`）
+
+針對「不開車行程幾乎拼不出來」的問題（見 [docs/ROADMAP.md](../docs/ROADMAP.md) 的評估），
+先做了三件低成本、高確定性的事：
+
+1. **`scraper/geo_utils.py`**：haversine 直線距離工具，純數學公式零成本，供其他腳本共用
+2. **`data/transit_stations.json`**：那霸單軌電車（ゆいレール）全 19 站座標，抓自 OSM
+   `railway=station`（沖繩本島只有這一條軌道系統，查詢範圍內的站點不需要額外篩選）
+3. **`scraper/tag_transit_access.py`**：幫每筆資料算到最近單軌站的直線距離，1.2km 內視為
+   步行可達，寫入 `nearest_monorail_station`／`monorail_distance_km`。`backend/app/filters.py`
+   的 `has_car=false` 篩選邏輯已經會用這個欄位放行「標記開車但其實走得到單軌站」的資料
+
+**已知限制**：這只解決了那霸市區周邊的不開車需求。北部/中部本來就沒有單軌，需要巴士資料才能解，
+查過沖繩有 GTFS 巴士開放資料生態（OTTOP），但還沒確認北部/中部主要巴士公司（沖縄バス/琉球バス交通/
+那覇バス/東陽バス）是否有涵蓋，這塊還沒做。
+
+## 玩水景點（`scraper/ingest_osm.py` 的 beach 類別）
+
+原本的 OSM 查詢完全沒抓 `natural=beach`，等於本島大部分實際海灘都不在知識庫裡。已經補查詢、
+匯入 25 筆命名海灘到 `attractions.json`（id 前綴 `osm-beach-`）。這些海灘目前只有名稱/座標/地區，
+**沒有「適合小孩/有救生員/有淋浴設施」這類決策資訊**，那部分還是得靠人工查證官網/部落格，
+沒有捷徑，見 docs/ROADMAP.md。

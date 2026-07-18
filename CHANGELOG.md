@@ -14,9 +14,13 @@
 ### Added
 - 把知識庫 `name` 欄位轉成繁體中文：`scraper/convert_traditional.py`（機械式新字體→繁體字元替換）+ `scraper/translate_names.py`（LLM輔助翻譯，僅翻有把握的知名連鎖店/地標）
 - 用 WebSearch/WebFetch 研究官方網站/部落格，補齊 6 筆熱門景點的 MapCode/停車/營業時間等核心欄位（首里城公園、齋場御嶽、沖繩世界玉泉洞、姬百合和平祈念資料館、殘波岬、真榮田岬）
+- 新增 `translated_name` 欄位，保證 UI 顯示一定是中文，跟謹慎保守的 `name` 欄位分開（`scraper/add_translated_name.py`）
+- 針對「不開車行程」缺口新增地基：`scraper/geo_utils.py`（haversine 距離）、`data/transit_stations.json`（單軌電車19站）、`scraper/tag_transit_access.py`（標註每筆資料離最近單軌站多遠），並更新 `filters.py` 讓單軌步行範圍內的景點在 `has_car=false` 時不會被誤排除
+- 針對「玩水行程」缺口，OSM 查詢補上 `natural=beach`，新增 25 筆命名海灘到知識庫
 
 ### Fixed
 - 修正 2 筆 OSM 社群提供的 `name:zh` 標籤形近字誤植（案本食堂→岸本食堂、花苙→花笠食堂）
+- `ingest_osm.py` 的 `to_entry()` 補上對 way/relation（`out center` 查詢回傳座標在 `center` 而非頂層）的座標解析，海灘資料需要這個
 
 ## [0.2.0] - 2026-07-18
 
