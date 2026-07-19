@@ -78,7 +78,7 @@ DEMO_ITINERARY_RESPONSE_JSON = """
           "id": "okinawa-kodomo-no-kuni",
           "name": "沖繩兒童王國",
           "category": "attraction",
-          "reason": "知識庫明確標記適合帶小孩（kid_friendly=true），營業時間9:30-17:30，緊鄰購物中心順路安排",
+          "reason": "知識庫明確標記適合帶小孩，營業時間9:30-17:30，緊鄰購物中心順路安排",
           "suggested_stay_duration": null,
           "travel_time_from_prev": "約3分鐘（平面道路直線距離約1.7km（含繞路係數））",
           "parking_notes": "旁邊有停車場",

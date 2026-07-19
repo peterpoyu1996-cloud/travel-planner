@@ -13,6 +13,11 @@ DATA_DIR = Path(__file__).resolve().parents[2] / "data"
 
 BUDGET_ORDER = {"$": 1, "$$": 2, "$$$": 3}
 
+# kid_friendly 從布林值改成 0-5 星等（2026-07 起逐筆用部落格交叉查證重新填值，
+# 見 data/schema.md「kid_friendly 星等制」），星等 < 2.0 視同過去的 false。
+# 尚未重新查證的舊資料仍存在 kid_friendly_legacy_flag，過渡期兩者都要檢查。
+KID_FRIENDLY_STAR_MIN = 2.0
+
 # 資料完整度排序：excel_seed/official_site 有查證過的核心欄位（MapCode/停車/親子適合度），
 # osm 大多只有名稱座標。同分類內優先給 LLM 看資料比較完整的那些。
 SOURCE_PRIORITY = {"excel_seed": 0, "official_site": 1, "llm_enriched": 2, "osm": 3}
@@ -28,8 +33,12 @@ def load_knowledge_base() -> list[dict]:
 
 
 def matches_conditions(entry: dict, conditions: TripConditions) -> bool:
-    if conditions.has_kids and entry.get("kid_friendly") is False:
-        return False
+    if conditions.has_kids:
+        star = entry.get("kid_friendly")
+        if star is not None and star < KID_FRIENDLY_STAR_MIN:
+            return False
+        if star is None and entry.get("kid_friendly_legacy_flag") is False:
+            return False
 
     if entry.get("budget_level") and conditions.budget_level:
         if BUDGET_ORDER.get(entry["budget_level"], 99) > BUDGET_ORDER.get(conditions.budget_level, 99):

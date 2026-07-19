@@ -44,7 +44,7 @@ export const DEMO_SCENARIOS: DemoScenario[] = [
           date: '2026-09-13',
           stops: [
             { id: 'aeon-mall-okinawa-rycom', name: 'AEON MALL沖繩來客夢', category: 'attraction', reason: '中部大型購物中心，官網查證過地址與MapCode（33 530 406*45），室內逛街不受天氣影響，離動物園只要3分鐘', suggested_stay_duration: null, travel_time_from_prev: '約19分鐘（經那覇IC上、喜舎場スマートIC下，高速公路段13.0km）', parking_notes: '大型購物中心附設停車場', requires_reservation: false },
-            { id: 'okinawa-kodomo-no-kuni', name: '沖繩兒童王國', category: 'attraction', reason: '知識庫明確標記適合帶小孩（kid_friendly=true），營業時間9:30-17:30，緊鄰購物中心順路安排', suggested_stay_duration: null, travel_time_from_prev: '約3分鐘（平面道路直線距離約1.7km（含繞路係數））', parking_notes: '旁邊有停車場', requires_reservation: false },
+            { id: 'okinawa-kodomo-no-kuni', name: '沖繩兒童王國', category: 'attraction', reason: '知識庫明確標記適合帶小孩，營業時間9:30-17:30，緊鄰購物中心順路安排', suggested_stay_duration: null, travel_time_from_prev: '約3分鐘（平面道路直線距離約1.7km（含繞路係數））', parking_notes: '旁邊有停車場', requires_reservation: false },
             { id: 'osm-hotel-2676267351', name: '蒙特雷飯店沖繩 溫泉度假村', category: 'hotel', reason: '今晚海灘飯店，位於恩納村西海岸；⚠️知識庫沒有這間飯店是否緊鄰沙灘的確切資料，訂房前建議自行查證', suggested_stay_duration: null, travel_time_from_prev: '約17分鐘（經沖縄南IC上、石川IC下，高速公路段14.6km）', parking_notes: null, requires_reservation: true },
           ],
         },

@@ -17,6 +17,7 @@ from common.geo.travel_time import estimate_minutes
 from .filters import select_candidates
 from .llm_provider import get_llm_provider
 from .models import DayPlan, ItineraryResponse, TripConditions
+from .opening_hours_check import closed_weekday_warning
 
 SYSTEM_PROMPT = """你是沖繩旅遊行程規劃助手。根據使用者條件與提供的候選景點清單，安排逐日行程。
 
@@ -89,6 +90,24 @@ def fill_real_travel_times(days: list[DayPlan], candidates: list[dict]) -> None:
         all_stops[i].travel_time_from_prev = f"約{round(result['minutes'])}分鐘（{result['detail']}）"
 
 
+def check_opening_hours_conflicts(days: list[DayPlan], candidates: list[dict]) -> list[str]:
+    """檢查每個 stop 的 opening_hours 有沒有整天都不營業，跟該天日期的星期幾比對。
+    只抓得到「星期幾層級」的公休，抓不到「同一天不同時段」的衝突（見
+    opening_hours_check.py 開頭說明），是已知的限制，不是這裡漏做。
+    """
+    by_id = {c["id"]: c for c in candidates}
+    warnings: list[str] = []
+    for day in days:
+        for stop in day.stops:
+            entry = by_id.get(stop.id)
+            if not entry:
+                continue
+            warning = closed_weekday_warning(stop.name, entry.get("opening_hours"), day.date)
+            if warning:
+                warnings.append(warning)
+    return warnings
+
+
 def generate_itinerary(conditions: TripConditions) -> ItineraryResponse:
     candidates = select_candidates(conditions, limit=15)
 
@@ -104,7 +123,9 @@ def generate_itinerary(conditions: TripConditions) -> ItineraryResponse:
     days = [DayPlan(**d) for d in parsed.get("days", [])]
     fill_real_travel_times(days, candidates)
 
+    warnings = parsed.get("warnings", []) + check_opening_hours_conflicts(days, candidates)
+
     return ItineraryResponse(
         days=days,
-        warnings=parsed.get("warnings", []),
+        warnings=warnings,
     )
