@@ -4,6 +4,7 @@ __pycache__/
 node_modules/
 dist/
 data/raw/
+data/private/
 .env
 .claude/settings.local.json
 *.xlsx
