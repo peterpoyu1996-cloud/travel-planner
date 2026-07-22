@@ -1,0 +1,7 @@
+[tool.pytest.ini_options]
+# common/ 跟 backend/app/ 是兩個獨立的頂層套件，沒有共同的父套件可以 import。
+# 加repo root（"common" 的父目錄）跟 backend/（"app" 的父目錄）到 sys.path，讓測試可以直接
+# `import common.geo.route_optimizer` 跟 `from app.main import app`——後者故意跟
+# backend/run-backend.bat 實際啟動時的 import 路徑（cwd=backend/，跑 app.main:app）保持一致。
+pythonpath = [".", "backend"]
+testpaths = ["tests"]
