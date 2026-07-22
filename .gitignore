@@ -5,6 +5,14 @@ node_modules/
 dist/
 data/raw/
 data/private/
+# 知識庫本體移到私有 repo（poyu-peter/travel-planner-data），這裡只留 schema.md
+# 公開說明資料結構。本機開發時這些檔案還是要存在（scraper/backend 都直接讀本機路徑），
+# 只是不再由這個公開 repo 追蹤版本；更新知識庫要去 travel-planner-data 那邊commit。
+data/attractions.json
+data/highway_network.json
+data/hotels.json
+data/restaurants.json
+data/transit_stations.json
 .env
 .claude/settings.local.json
 *.xlsx
