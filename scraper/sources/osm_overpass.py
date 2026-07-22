@@ -52,6 +52,15 @@ QUERY_TEMPLATES = {
         );
         out center;
     """,
+    "malls": """
+        [out:json][timeout:60];
+        (
+          node["shop"~"mall|department_store"]({bbox});
+          way["shop"~"mall|department_store"]({bbox});
+          relation["shop"~"mall|department_store"]({bbox});
+        );
+        out center;
+    """,
     "transit_stations": """
         [out:json][timeout:60];
         (

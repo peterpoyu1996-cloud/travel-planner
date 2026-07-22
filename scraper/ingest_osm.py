@@ -62,6 +62,20 @@ CATEGORY_CONFIG = {
         "cap": 25,
         "stored_category": "attraction",
     },
+    # 大型購物中心/百貨——跟 beach 一樣併入 attractions.json，category 仍存 "attraction"，
+    # 用 id 前綴 osm-mall 區分。小型店舖/連鎖速食/飲料店/超市刻意不查（使用者決定：
+    # 那些數量太多，只挑幾間知名代表用個別查證方式手動加，見 costco-okinawa-nanjo）
+    "mall": {
+        "seed_file": "attractions.json",
+        "osm_file": "osm_okinawa_malls.json",
+        "id_prefix": "osm-mall",
+        "cap": 8,  # 使用者要求「大的shopping mall納入即可」——quality_score（OSM標籤
+                   # 完整度）完全不等於商場規模/知名度（實測：加大 cap 後小型店家/
+                   # 單店反而先進來，PARCO CITY這種指標大商場沒地址標籤分數還比較低），
+                   # 這個類別已經人工核對過、只留下規模/知名度真的夠大的8間，之後重跑
+                   # 這支腳本如果又抓進小商場，要再人工複核，不能只靠調 cap 解決
+        "stored_category": "attraction",
+    },
 }
 
 # 少數信心足夠的分類線索才推 indoor_outdoor，其餘一律 null
@@ -72,6 +86,8 @@ INDOOR_OUTDOOR_HINTS = {
     "viewpoint": "戶外",
     "zoo": "兩者皆有",
     "theme_park": "戶外",
+    "mall": "室內",
+    "department_store": "室內",
 }
 
 
@@ -123,7 +139,7 @@ def to_entry(category: str, el: dict, id_prefix: str) -> dict | None:
     name = tags.get("name:zh-Hant") or tags.get("name:zh") or name_local
 
     indoor_outdoor = None
-    for key in ("tourism", "leisure", "amenity"):
+    for key in ("tourism", "leisure", "amenity", "shop"):
         hint = INDOOR_OUTDOOR_HINTS.get(tags.get(key))
         if hint:
             indoor_outdoor = hint
