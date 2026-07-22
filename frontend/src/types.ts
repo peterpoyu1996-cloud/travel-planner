@@ -32,3 +32,59 @@ export interface ItineraryResponse {
   days: DayPlan[]
   warnings: string[]
 }
+
+export interface PublicPOI {
+  id: string
+  name: string
+  category: string
+  region_group: string | null
+  sub_area: string | null
+  lat: number | null
+  lng: number | null
+  suggested_stay_duration: string | null
+  kid_friendly: number | null
+  recommendation_score: number | null
+  budget_level: string | null
+}
+
+export interface GeoAnchor {
+  poi_id?: string | null
+  lat?: number | null
+  lng?: number | null
+  label?: string | null
+}
+
+export interface CustomRouteRequest {
+  attraction_ids: string[]
+  trip_days: number
+  start_date: string // YYYY-MM-DD
+  start: GeoAnchor
+  end?: GeoAnchor | null
+}
+
+export interface CustomRouteResponse extends ItineraryResponse {
+  total_travel_minutes: number
+  excluded_attraction_ids: string[]
+}
+
+export interface DayBucket {
+  attraction_ids: string[]
+}
+
+export interface DayPlanRequest {
+  days: DayBucket[]
+  start_date: string // YYYY-MM-DD
+  start: GeoAnchor
+  end?: GeoAnchor | null
+}
+
+export interface DayPlanResponse {
+  chosen_days: DayPlan[]
+  chosen_total_minutes: number
+  suggested_order: number[] | null
+  suggested_days: DayPlan[] | null
+  suggested_total_minutes: number | null
+  minutes_saved: number
+  warnings: string[]
+  excluded_attraction_ids: string[]
+}

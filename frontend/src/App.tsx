@@ -1,13 +1,23 @@
 import { useState } from 'react'
 import './App.css'
-import { fetchItinerary } from './api'
+import { fetchCustomRoute, fetchDayPlan, fetchItinerary } from './api'
 import { TripForm } from './components/TripForm'
+import { CustomRouteForm } from './components/CustomRouteForm'
+import { DayPlanForm } from './components/DayPlanForm'
+import { DayPlanResultView } from './components/DayPlanResultView'
 import { ItineraryView } from './components/ItineraryView'
 import { ScenarioPicker } from './components/ScenarioPicker'
 import { DEMO_SCENARIOS } from './data/demoScenarios'
-import type { ItineraryResponse, TripConditions } from './types'
+import type {
+  CustomRouteRequest,
+  CustomRouteResponse,
+  DayPlanRequest,
+  DayPlanResponse,
+  ItineraryResponse,
+  TripConditions,
+} from './types'
 
-type Mode = 'scenarios' | 'custom'
+type Mode = 'scenarios' | 'custom' | 'route-optimizer' | 'day-plan'
 
 function App() {
   const [mode, setMode] = useState<Mode>('scenarios')
@@ -17,6 +27,14 @@ function App() {
   const [itinerary, setItinerary] = useState<ItineraryResponse | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+
+  const [customRoute, setCustomRoute] = useState<CustomRouteResponse | null>(null)
+  const [routeLoading, setRouteLoading] = useState(false)
+  const [routeError, setRouteError] = useState<string | null>(null)
+
+  const [dayPlan, setDayPlan] = useState<DayPlanResponse | null>(null)
+  const [dayPlanLoading, setDayPlanLoading] = useState(false)
+  const [dayPlanError, setDayPlanError] = useState<string | null>(null)
 
   const activeScenario = DEMO_SCENARIOS.find((s) => s.id === activeScenarioId) ?? null
 
@@ -31,6 +49,34 @@ function App() {
       setError(e instanceof Error ? e.message : String(e))
     } finally {
       setLoading(false)
+    }
+  }
+
+  async function handleCustomRouteSubmit(request: CustomRouteRequest) {
+    setRouteLoading(true)
+    setRouteError(null)
+    setCustomRoute(null)
+    try {
+      const result = await fetchCustomRoute(request)
+      setCustomRoute(result)
+    } catch (e) {
+      setRouteError(e instanceof Error ? e.message : String(e))
+    } finally {
+      setRouteLoading(false)
+    }
+  }
+
+  async function handleDayPlanSubmit(request: DayPlanRequest) {
+    setDayPlanLoading(true)
+    setDayPlanError(null)
+    setDayPlan(null)
+    try {
+      const result = await fetchDayPlan(request)
+      setDayPlan(result)
+    } catch (e) {
+      setDayPlanError(e instanceof Error ? e.message : String(e))
+    } finally {
+      setDayPlanLoading(false)
     }
   }
 
@@ -59,6 +105,24 @@ function App() {
           onClick={() => setMode('custom')}
         >
           自訂條件生成
+        </button>
+        <button
+          type="button"
+          role="tab"
+          aria-selected={mode === 'route-optimizer'}
+          className={mode === 'route-optimizer' ? 'active' : ''}
+          onClick={() => setMode('route-optimizer')}
+        >
+          自訂景點清單
+        </button>
+        <button
+          type="button"
+          role="tab"
+          aria-selected={mode === 'day-plan'}
+          className={mode === 'day-plan' ? 'active' : ''}
+          onClick={() => setMode('day-plan')}
+        >
+          分天規劃
         </button>
       </nav>
 
@@ -89,6 +153,29 @@ function App() {
             <TripForm onSubmit={handleSubmit} loading={loading} />
             {error && <p className="error">發生錯誤：{error}</p>}
             {itinerary && <ItineraryView itinerary={itinerary} />}
+          </>
+        )}
+
+        {mode === 'route-optimizer' && (
+          <>
+            <CustomRouteForm onSubmit={handleCustomRouteSubmit} loading={routeLoading} />
+            {routeError && <p className="error">發生錯誤：{routeError}</p>}
+            {customRoute && (
+              <>
+                <p className="section-intro">
+                  總移動時間約 {Math.round(customRoute.total_travel_minutes)} 分鐘。
+                </p>
+                <ItineraryView itinerary={customRoute} />
+              </>
+            )}
+          </>
+        )}
+
+        {mode === 'day-plan' && (
+          <>
+            <DayPlanForm onSubmit={handleDayPlanSubmit} loading={dayPlanLoading} />
+            {dayPlanError && <p className="error">發生錯誤：{dayPlanError}</p>}
+            {dayPlan && <DayPlanResultView result={dayPlan} />}
           </>
         )}
       </main>
