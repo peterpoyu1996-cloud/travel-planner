@@ -4,6 +4,11 @@ interface Props {
   itinerary: ItineraryResponse
 }
 
+// 後端時間欄位是 ISO "HH:MM:SS"，畫面上不需要秒數
+function formatClockTime(t: string): string {
+  return t.slice(0, 5)
+}
+
 export function ItineraryView({ itinerary }: Props) {
   return (
     <div className="itinerary-view">
@@ -23,8 +28,9 @@ export function ItineraryView({ itinerary }: Props) {
           )}
           <div className="stop-list">
             {day.stops.map((stop) => (
-              <div key={stop.id} className="stop-card">
+              <div key={stop.id} className={`stop-card${stop.late_by_minutes ? ' stop-card-late' : ''}`}>
                 <div className="stop-header">
+                  {stop.eta && <span className="stop-eta">{formatClockTime(stop.eta)}</span>}
                   <span className="stop-name">{stop.name}</span>
                   <span className="stop-category">{stop.category}</span>
                 </div>
@@ -34,7 +40,13 @@ export function ItineraryView({ itinerary }: Props) {
                   {stop.travel_time_from_prev && <span>交通：{stop.travel_time_from_prev}</span>}
                   {stop.parking_notes && <span>停車：{stop.parking_notes}</span>}
                   {stop.requires_reservation && <span className="badge">需預約</span>}
+                  {stop.must_arrive_by && (
+                    <span className="badge badge-deadline">訂位 {formatClockTime(stop.must_arrive_by)}</span>
+                  )}
                 </div>
+                {stop.late_by_minutes != null && (
+                  <p className="stop-late-warning">⚠️ 預估會晚到約 {Math.round(stop.late_by_minutes)} 分鐘，排不進這個時間窗</p>
+                )}
               </div>
             ))}
           </div>

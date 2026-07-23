@@ -425,9 +425,94 @@ header h1 {
 }
 
 .day-bucket-card > h3 {
-  margin: 0 0 0.75rem;
+  margin: 0;
   font-size: 0.95rem;
   color: var(--text-h);
+}
+
+.day-bucket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  gap: 0.75rem;
+}
+
+.day-start-time {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--text);
+}
+
+.day-start-time input[type='time'] {
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text-h);
+  font-family: inherit;
+}
+
+.stop-deadlines {
+  border-top: 1px dashed var(--border);
+  margin-top: 0.85rem;
+  padding-top: 0.75rem;
+}
+
+.stop-deadlines-hint {
+  font-size: 0.78rem;
+  color: var(--text);
+  margin: 0 0 0.5rem;
+}
+
+.stop-deadline-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--text-h);
+  padding: 0.2rem 0;
+}
+
+.stop-deadline-name {
+  flex: 1;
+}
+
+.stop-deadline-row input[type='time'] {
+  padding: 0.25rem 0.45rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text-h);
+  font-family: inherit;
+}
+
+.stop-eta {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.badge-deadline {
+  background: var(--accent-bg);
+  color: var(--accent);
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.stop-card-late {
+  border-color: #c0392b;
+}
+
+.stop-late-warning {
+  color: #c0392b;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin: 0.5rem 0 0;
 }
 
 .day-plan-controls {

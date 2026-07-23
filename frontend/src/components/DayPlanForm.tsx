@@ -4,6 +4,7 @@ import type { DayPlanRequest, PublicPOI } from '../types'
 import { AnchorFields, anchorStateToGeoAnchor, defaultAnchorState, isAnchorStateComplete } from './AnchorFields'
 import type { AnchorState } from './AnchorFields'
 import { AttractionPicker } from './AttractionPicker'
+import { StopDeadlines } from './StopDeadlines'
 
 interface Props {
   onSubmit: (request: DayPlanRequest) => void
@@ -13,6 +14,7 @@ interface Props {
 const MAX_DAYS = 7 // 跟 common/geo/route_optimizer.py 的 MAX_DAY_PLAN_DAYS 對齊：
                     // 天序建議是窮舉全排列，7天=5040種排列，再多會太慢
 const MAX_PER_DAY = 15
+const DEFAULT_START_TIME = '09:00'
 const today = new Date().toISOString().slice(0, 10)
 
 function resizeBuckets(buckets: string[][], size: number): string[][] {
@@ -21,12 +23,20 @@ function resizeBuckets(buckets: string[][], size: number): string[][] {
   return [...buckets, ...Array.from({ length: size - buckets.length }, () => [])]
 }
 
+function resizeStartTimes(times: string[], size: number): string[] {
+  if (times.length === size) return times
+  if (times.length > size) return times.slice(0, size)
+  return [...times, ...Array.from({ length: size - times.length }, () => DEFAULT_START_TIME)]
+}
+
 export function DayPlanForm({ onSubmit, loading }: Props) {
   const [pois, setPois] = useState<PublicPOI[]>([])
   const [poisError, setPoisError] = useState<string | null>(null)
 
   const [tripDays, setTripDays] = useState(3)
   const [dayBuckets, setDayBuckets] = useState<string[][]>([[], [], []])
+  const [dayStartTimes, setDayStartTimes] = useState<string[]>([DEFAULT_START_TIME, DEFAULT_START_TIME, DEFAULT_START_TIME])
+  const [deadlines, setDeadlines] = useState<Record<string, string>>({}) // attraction_id -> "HH:MM"
   const [startDate, setStartDate] = useState(today)
 
   const [start, setStart] = useState<AnchorState>(defaultAnchorState())
@@ -43,16 +53,24 @@ export function DayPlanForm({ onSubmit, loading }: Props) {
     const clamped = Math.min(Math.max(value, 1), MAX_DAYS)
     setTripDays(clamped)
     setDayBuckets((prev) => resizeBuckets(prev, clamped))
+    setDayStartTimes((prev) => resizeStartTimes(prev, clamped))
   }
 
   function handleDayChange(dayIndex: number, ids: string[]) {
     setDayBuckets((prev) => prev.map((day, i) => (i === dayIndex ? ids : day)))
   }
 
+  function handleStartTimeChange(dayIndex: number, time: string) {
+    setDayStartTimes((prev) => prev.map((t, i) => (i === dayIndex ? time : t)))
+  }
+
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     const request: DayPlanRequest = {
-      days: dayBuckets.map((ids) => ({ attraction_ids: ids })),
+      days: dayBuckets.map((ids, i) => ({
+        stops: ids.map((id) => ({ attraction_id: id, must_arrive_by: deadlines[id] ?? null })),
+        start_time: dayStartTimes[i],
+      })),
       start_date: startDate,
       start: anchorStateToGeoAnchor(start),
       end: hasEnd ? anchorStateToGeoAnchor(end) : null,
@@ -101,13 +119,24 @@ export function DayPlanForm({ onSubmit, loading }: Props) {
       <div className="day-bucket-list">
         {dayBuckets.map((ids, dayIndex) => (
           <div key={dayIndex} className="day-bucket-card">
-            <h3>第 {dayIndex + 1} 天</h3>
+            <div className="day-bucket-header">
+              <h3>第 {dayIndex + 1} 天</h3>
+              <label className="day-start-time">
+                出發時間
+                <input
+                  type="time"
+                  value={dayStartTimes[dayIndex] ?? DEFAULT_START_TIME}
+                  onChange={(e) => handleStartTimeChange(dayIndex, e.target.value)}
+                />
+              </label>
+            </div>
             <AttractionPicker
               pois={pois}
               selectedIds={ids}
               onChange={(newIds) => handleDayChange(dayIndex, newIds)}
               maxSelectable={MAX_PER_DAY}
             />
+            <StopDeadlines stopIds={ids} pois={pois} value={deadlines} onChange={setDeadlines} />
           </div>
         ))}
       </div>

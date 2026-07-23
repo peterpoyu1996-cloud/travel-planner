@@ -20,6 +20,9 @@ export interface ItineraryStop {
   travel_time_from_prev: string | null
   parking_notes: string | null
   requires_reservation: boolean
+  eta: string | null // "HH:MM"，只有分天規劃且該天有時間窗時才會有值
+  must_arrive_by: string | null // "HH:MM"，使用者標的訂位時間
+  late_by_minutes: number | null // 有值代表這站會遲到（排不進時間窗）
 }
 
 export interface DayPlan {
@@ -67,8 +70,14 @@ export interface CustomRouteResponse extends ItineraryResponse {
   excluded_attraction_ids: string[]
 }
 
+export interface DayStopInput {
+  attraction_id: string
+  must_arrive_by?: string | null // "HH:MM"，只有訂位的景點才填，其他留 null
+}
+
 export interface DayBucket {
-  attraction_ids: string[]
+  stops: DayStopInput[]
+  start_time?: string // "HH:MM"，這天的出發時間，不給後端預設 09:00
 }
 
 export interface DayPlanRequest {
