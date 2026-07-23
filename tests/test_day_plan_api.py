@@ -17,9 +17,22 @@ NO_COORDS = "onna-kaihin-koen-nabee-beach"
 NAHA_AIRPORT_ANCHOR = {"lat": 26.1958, "lng": 127.6455, "label": "那霸機場"}
 
 
-def _base_request(days: list[list[str]], **overrides) -> dict:
+def _base_request(
+    days: list[list[str]],
+    deadlines: dict[str, str] | None = None,
+    start_times: list[str] | None = None,
+    **overrides,
+) -> dict:
+    deadlines = deadlines or {}
+    day_payloads = []
+    for i, ids in enumerate(days):
+        day_payload = {"stops": [{"attraction_id": aid, "must_arrive_by": deadlines.get(aid)} for aid in ids]}
+        if start_times:
+            day_payload["start_time"] = start_times[i]
+        day_payloads.append(day_payload)
+
     payload = {
-        "days": [{"attraction_ids": ids} for ids in days],
+        "days": day_payloads,
         "start_date": "2026-01-07",
         "start": NAHA_AIRPORT_ANCHOR,
     }
@@ -44,8 +57,11 @@ def test_zigzag_day_order_gets_a_suggestion():
     assert body["minutes_saved"] > 0
 
     # suggested 的每一天景點組合是 chosen 那幾包的重新排列，不會出現新景點或漏掉景點
-    suggested_ids_per_day = [set(s["id"] for s in day["stops"]) for day in body["suggested_days"]]
-    assert sorted(suggested_ids_per_day, key=str) == sorted([set(NORTH), set(SOUTH), set(CENTRAL)], key=str)
+    # （排序用 sorted(tuple) 而不是 str(set)——set 的 repr 順序看 hash 隨機種子，
+    # 每次啟動 Python 都可能不一樣，用 str 排序等於巧合式通過，不是真的穩定）
+    suggested_ids_per_day = [tuple(sorted(s["id"] for s in day["stops"])) for day in body["suggested_days"]]
+    expected = [tuple(sorted(NORTH)), tuple(sorted(SOUTH)), tuple(sorted(CENTRAL))]
+    assert sorted(suggested_ids_per_day) == sorted(expected)
 
 
 def test_already_sensible_day_order_gets_no_suggestion():
@@ -93,3 +109,54 @@ def test_partial_missing_coords_excluded_with_warning():
     all_ids = {s["id"] for day in body["chosen_days"] for s in day["stops"]}
     assert NO_COORDS not in all_ids
     assert any("缺少座標" in w for w in body["warnings"])
+
+
+# ============================================================================
+# 時間窗（訂位時間）：只有標了 must_arrive_by 的景點才受影響。
+# ============================================================================
+
+
+def test_no_deadline_leaves_eta_and_late_by_minutes_none():
+    resp = client.post("/day-plan", json=_base_request([SOUTH]))
+    assert resp.status_code == 200
+    body = resp.json()
+    for stop in body["chosen_days"][0]["stops"]:
+        assert stop["eta"] is None
+        assert stop["late_by_minutes"] is None
+    assert not any("訂位" in w for w in body["warnings"])
+
+
+def test_generous_deadline_is_satisfied_and_shown_in_eta():
+    resp = client.post(
+        "/day-plan",
+        json=_base_request([SOUTH], deadlines={"kokusai-street": "20:00"}),
+    )
+    assert resp.status_code == 200
+    body = resp.json()
+    stops_by_id = {s["id"]: s for s in body["chosen_days"][0]["stops"]}
+    assert stops_by_id["kokusai-street"]["eta"] is not None
+    assert stops_by_id["kokusai-street"]["late_by_minutes"] is None
+    assert not any("訂位" in w for w in body["warnings"])
+
+
+def test_impossible_deadline_reports_warning_and_late_by_minutes():
+    # deadline 設在出發時間本身，兩站都在南部但彼此有實際車程，不可能剛好準時
+    resp = client.post(
+        "/day-plan",
+        json=_base_request([SOUTH], deadlines={"kokusai-street": "09:00"}, start_times=["09:00"]),
+    )
+    assert resp.status_code == 200
+    body = resp.json()
+    assert any("訂位" in w for w in body["warnings"])
+    stops_by_id = {s["id"]: s for s in body["chosen_days"][0]["stops"]}
+    assert stops_by_id["kokusai-street"]["late_by_minutes"] is not None
+    assert stops_by_id["kokusai-street"]["late_by_minutes"] > 0
+
+
+def test_start_time_defaults_when_omitted():
+    # 不給 start_time 也該能正常送出（schema 層預設 09:00），不是必填炸掉
+    payload = _base_request([SOUTH])
+    for day in payload["days"]:
+        day.pop("start_time", None)
+    resp = client.post("/day-plan", json=payload)
+    assert resp.status_code == 200

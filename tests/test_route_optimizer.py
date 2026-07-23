@@ -4,6 +4,7 @@
 """
 
 import math
+from datetime import time
 
 import pytest
 
@@ -18,6 +19,7 @@ from common.geo.route_optimizer import (
     nearest_neighbor_path,
     optimize_route,
     parse_stay_minutes,
+    schedule_day_with_deadlines,
     split_into_days,
     two_opt,
 )
@@ -330,3 +332,119 @@ class TestEvaluateDayPlan:
     def test_empty_order_returns_all_empty_days(self):
         result = split_into_days([], [], trip_days=4)
         assert result == [[], [], [], []]
+
+
+# ============================================================================
+# 時間窗（訂位時間）測試：只有標了 must_arrive_by 的點才受影響，其他點應該表現得
+# 跟完全沒有時間窗一樣（回歸測試），衝突時要嘛修得好、要嘛老實回報排不下，
+# 不能安靜地生出一個實際上會遲到的行程。
+# ============================================================================
+
+
+class TestScheduleDayWithDeadlines:
+    def test_no_deadlines_matches_optimize_route_exactly(self):
+        points = _square_points()
+        result = schedule_day_with_deadlines(points, start_id="A", end_id=None, day_start=time(9, 0))
+        baseline = optimize_route(points, start_id="A", end_id=None)
+        assert [p.id for p in result["order"]] == [p.id for p in baseline["order"]]
+        assert result["violations"] == []
+        assert result["total_minutes"] == pytest.approx(baseline["total_minutes"])
+
+    def test_generous_deadline_causes_no_violation_and_no_reorder(self):
+        points = _square_points()
+        baseline = optimize_route(points, start_id="A")
+        elapsed = sum(leg.minutes for leg in baseline["legs"])
+        last = baseline["order"][-1]
+
+        deadline_minutes = 9 * 60 + elapsed + 60  # 自然到達時間之後還留一小時餘裕
+        deadline = time(hour=int(deadline_minutes // 60) % 24, minute=int(deadline_minutes % 60))
+
+        points_with_deadline = [
+            RoutePoint(id=p.id, lat=p.lat, lng=p.lng, must_arrive_by=(deadline if p.id == last.id else None))
+            for p in points
+        ]
+        result = schedule_day_with_deadlines(points_with_deadline, start_id="A", end_id=None, day_start=time(9, 0))
+
+        assert result["violations"] == []
+        assert [p.id for p in result["order"]] == [p.id for p in baseline["order"]]
+
+    def test_impossible_deadline_is_reported_not_hidden(self):
+        points = _square_points()
+        # deadline 等於出發時間本身——任何一站都需要正的移動時間才到得了，
+        # 不管怎麼排都不可能剛好等於出發當下，保證排不進去
+        points_with_deadline = [
+            RoutePoint(id=p.id, lat=p.lat, lng=p.lng, must_arrive_by=(time(9, 0) if p.id == "D" else None))
+            for p in points
+        ]
+        result = schedule_day_with_deadlines(points_with_deadline, start_id="A", end_id=None, day_start=time(9, 0))
+
+        assert len(result["violations"]) == 1
+        assert result["violations"][0]["id"] == "D"
+        assert result["violations"][0]["late_by_minutes"] > 0
+        # 排不進去也還是要回傳一個完整的順序，不能因為有違規就整個開天窗
+        assert len(result["order"]) == len(points)
+
+    def test_tight_but_feasible_deadline_relocates_point_earlier(self):
+        points = _square_points()
+        baseline = optimize_route(points, start_id="A")
+        target = baseline["order"][-1]  # 自然順序下最晚到的那一站
+
+        # 直接從 A 到 target 要多久（只放這兩點跑一次，拿到單純的兩點車程）
+        direct = optimize_route([p for p in points if p.id in ("A", target.id)], start_id="A")
+        direct_minutes = direct["legs"][0].minutes
+
+        # deadline 設在「直接前往」剛好來得及、但自然順序（先繞去別站）一定會遲到的區間
+        natural_elapsed = sum(leg.minutes for leg in baseline["legs"])
+        assert direct_minutes < natural_elapsed, "測試前提：直接前往一定比自然順序快，否則這個案例沒有意義"
+
+        deadline_minutes = 9 * 60 + direct_minutes + 2  # 直接前往 + 2 分鐘餘裕
+        deadline = time(hour=int(deadline_minutes // 60) % 24, minute=int(deadline_minutes % 60))
+
+        points_with_deadline = [
+            RoutePoint(id=p.id, lat=p.lat, lng=p.lng, must_arrive_by=(deadline if p.id == target.id else None))
+            for p in points
+        ]
+        result = schedule_day_with_deadlines(points_with_deadline, start_id="A", end_id=None, day_start=time(9, 0))
+
+        assert result["violations"] == []
+        assert result["order"][1].id == target.id  # 被搬到緊接出發點之後
+
+    def test_multiple_deadlines_earliest_one_prioritized_when_conflicting(self):
+        points = _square_points()
+        # B、D 都給很緊的 deadline，時間上 B 比 D 早——修復應該優先滿足 B
+        points_with_deadlines = [
+            RoutePoint(id=p.id, lat=p.lat, lng=p.lng) for p in points
+        ]
+        by_id = {p.id: p for p in points_with_deadlines}
+        by_id["B"] = RoutePoint(id="B", lat=SQUARE["B"][0], lng=SQUARE["B"][1], must_arrive_by=time(9, 10))
+        by_id["D"] = RoutePoint(id="D", lat=SQUARE["D"][0], lng=SQUARE["D"][1], must_arrive_by=time(9, 20))
+        ordered_points = [by_id[p.id] for p in points]
+
+        result = schedule_day_with_deadlines(ordered_points, start_id="A", end_id=None, day_start=time(9, 0))
+        # 不強求兩個都能滿足（座標很近，兩個都卡緊時間可能真的排不下一個），
+        # 但至少不該是「時間較晚的 D 滿足了、時間較早的 B 卻沒被優先處理」這種怪結果
+        violation_ids = {v["id"] for v in result["violations"]}
+        assert not ("D" not in violation_ids and "B" in violation_ids)
+
+
+class TestChainOptimizeDaysWithDeadlines:
+    def test_day_without_deadlines_unaffected(self):
+        result = chain_optimize_days(ZIGZAG_ORDER, START_POINT)
+        assert result["violations"] == []
+
+    def test_deadline_on_one_day_surfaces_in_violations_when_infeasible(self):
+        impossible_bucket = [
+            RoutePoint(id="north-1", lat=26.70, lng=128.00, must_arrive_by=time(9, 0)),
+            RoutePoint(id="north-2", lat=26.72, lng=128.02),
+        ]
+        result = chain_optimize_days([impossible_bucket], START_POINT, day_start_times=[time(9, 0)])
+        assert len(result["violations"]) == 1
+        assert result["violations"][0]["id"] == "north-1"
+
+    def test_default_day_start_is_nine_am_when_not_provided(self):
+        # 不給 day_start_times 時，內部應該預設 09:00，不是直接炸掉或當成 None 出發
+        impossible_bucket = [
+            RoutePoint(id="north-1", lat=26.70, lng=128.00, must_arrive_by=time(9, 0)),
+        ]
+        result = chain_optimize_days([impossible_bucket], START_POINT)
+        assert len(result["violations"]) == 1
